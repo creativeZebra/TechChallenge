@@ -43,7 +43,7 @@ npm run build
 # 4. Tech Stack
 - React
 - Tailwind CSS 
-- MUI
+- MUI (Material UI)
 - Node
 
 (for further dev, if backend is needed: MongoDB, Express)
