@@ -42,7 +42,7 @@ npm run build
 
 # 4. Tech Stack
 - React
-- Treact 
+- Tailwind CSS 
 - MUI
 - Node
 
