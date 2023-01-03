@@ -21,7 +21,7 @@ First and foremost, make sure you install the necessary dependencies using (yarn
 npm install
 ```
 
-In the project directory, you can run
+In the project directory, you can now run
 
 ```
 npm run start
