@@ -36,7 +36,7 @@ export default () => {
         <Row>
           <LogoContainer>
             <LogoImg src={logoGreen} />
-            <LogoText>SustainaBuild</LogoText>
+            <LogoText>SustainaBuild.</LogoText>
           </LogoContainer>
           <LinksContainer>
             <Link href="#">Home</Link>
@@ -57,7 +57,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2022, SustainaBuild. All Rights Reserved.
+            &copy; Copyright 2023. SustainaBuild. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

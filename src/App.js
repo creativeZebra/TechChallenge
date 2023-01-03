@@ -6,6 +6,7 @@ import LandingPage from "pages/LandingPage.js";
 import ComponentRenderer from "ComponentRenderer.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BuildingInfo from "pages/BuildingInfo";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<LandingPage />} />
+          <Route path="/building" element={<BuildingInfo />} />
         </Routes>
       </Router>
     </>
