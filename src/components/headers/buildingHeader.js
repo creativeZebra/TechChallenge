@@ -2,6 +2,8 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import { Grid, Typography, Box, Card } from '@mui/material';
+
 
 import Header, {
   NavLink,
@@ -13,7 +15,7 @@ import Header, {
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
-    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
+    ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300 -mb--4 -mt-4`}
   }
   ${NavToggle}.closed {
     ${tw`text-gray-100 hover:text-green-800`}
