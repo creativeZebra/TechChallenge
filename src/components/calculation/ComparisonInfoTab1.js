@@ -6,13 +6,13 @@ function ComparisonInfoTab1() {
             ComparisonInfoTab1
             <br>
             </br>
-            Input Field 1
+            Graph 1
             <br>
             </br>
-            Input Field 2
+            Graph 2
             <br>
             </br>
-            Input Field 3
+            Graph 3
             <br>
             </br>
             ...

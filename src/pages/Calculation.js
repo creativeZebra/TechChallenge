@@ -13,7 +13,7 @@ import { Grid, Container } from '@mui/material';
 export default () => (
     <AnimationRevealPage>
         <BuildingHeader />
-        <Container fixed sx={{ paddingTop: 2 }}>
+        <Container fixed sx={{ paddingTop: 4 }}>
             <Grid
                 container
                 direction="row"
