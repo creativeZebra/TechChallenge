@@ -3,40 +3,128 @@ import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import styled from "styled-components";
 import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/plus.svg";
+import TextField from "@mui/material/TextField";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 
 const FormContainer = tw.div`w-full flex-1 mt-8`;
 const Form = tw.form`mx-auto max-w-xs`;
-const Input = tw.input`w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5 first:mt-0`;
-const Content = tw.div`max-w-screen-xl m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
-const MainContainer = tw.div`lg:w-1/2 xl:w-5/12 p-6 sm:p-12`;
-const MainContent = tw.div`min-h-screen -m-8 mt-10 flex flex-col items-center`;
-const Heading = tw.h1`text-2xl xl:text-3xl font-extrabold`;
+const MainContent = tw.div`min-h-10 mb-10 -m-2 mt-10 flex flex-col items-center`;
 
-const SubmitButton = styled.button`
-  ${tw`mt-5 tracking-wide font-semibold bg-green-500 text-gray-100 w-full py-4 rounded-lg hover:bg-primary-900 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none`}
-  .icon {
-    ${tw`w-6 h-6 -ml-2`}
-  }
-  .text {
-    ${tw`ml-3`}
-  }
-`;
-export default ({
-  submitButtonText = "Load Building",
-  SubmitButtonIcon = SignUpIcon,
-  headingText = "Enter Building Information"
-}) => (
-  <MainContent>
-    <Heading>{headingText}</Heading>
-    <FormContainer>
-      <Form>
-        <Input type="email" placeholder="Email" />
-        <Input type="password" placeholder="Password" />
-        <SubmitButton type="submit">
-          <SubmitButtonIcon className="icon" />
-          <span className="text">{submitButtonText}</span>
-        </SubmitButton>
-      </Form>
-    </FormContainer>
-  </MainContent>
-);
+function Body1() {
+  const [age, setAge] = React.useState("");
+
+  const handleAgeChange = (event) => {
+    setAge(event.target.value);
+  };
+
+  const [type, setType] = React.useState("");
+
+  const handleTypeChange = (event) => {
+    setType(event.target.value);
+  };
+
+  const [climate, setClimate] = React.useState("");
+
+  const handleClimateChange = (event) => {
+    setClimate(event.target.value);
+  };
+
+  return (
+    <MainContent>
+      <Typography variant="h4" gutterBottom>
+        Enter Building Information
+      </Typography>
+      <FormContainer>
+        <Form>
+          <TextField
+            id="outlined-basic"
+            label="Address"
+            variant="outlined"
+            sx={{ mt: 3, width: "32ch" }}
+            color="success"
+          />
+          <FormControl fullWidth sx={{ mt: 3, width: "32ch" }}>
+            <InputLabel id="demo-simple-select-label" color="success">
+              Climate Region
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={climate}
+              label="Climate Region"
+              onChange={handleClimateChange}
+              sx={{ width: "36ch" }}
+              color="success"
+            >
+              <MenuItem value={1}>1 - XY</MenuItem>
+              <MenuItem value={2}>2 - XY</MenuItem>
+              <MenuItem value={3}>3 - XY</MenuItem>
+              <MenuItem value={4}>4 - XY</MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl fullWidth sx={{ mt: 3, width: "32ch" }}>
+            <InputLabel id="demo-simple-select-label" color="success">
+              Building Type
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={type}
+              label="Building Type"
+              onChange={handleTypeChange}
+              sx={{ width: "36ch" }}
+              color="success"
+            >
+              <MenuItem value={1}>Single Family House</MenuItem>
+              <MenuItem value={2}>Terraced House</MenuItem>
+              <MenuItem value={3}>Multi Family House</MenuItem>
+              <MenuItem value={4}>Apartment Block</MenuItem>
+              <MenuItem value={5}>Company Building</MenuItem>
+            </Select>
+          </FormControl>
+          <FormControl fullWidth sx={{ mt: 3, width: "32ch" }}>
+            <InputLabel id="demo-simple-select-label" color="success">
+              Construction Year Class
+            </InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Construction Year Class"
+              onChange={handleAgeChange}
+              sx={{ width: "36ch" }}
+              color="success"
+            >
+              <MenuItem value={10}>... 1859</MenuItem>
+              <MenuItem value={20}>1860 ... 1918</MenuItem>
+              <MenuItem value={30}>1919 ... 1948</MenuItem>
+              <MenuItem value={40}>1949 ... 1957</MenuItem>
+              <MenuItem value={50}>1958 ... 1968</MenuItem>
+              <MenuItem value={60}>1969 ... 1978</MenuItem>
+              <MenuItem value={70}>1979 ... 1983</MenuItem>
+              <MenuItem value={80}>1984 ... 1994</MenuItem>
+              <MenuItem value={90}>1995 ... 2001</MenuItem>
+              <MenuItem value={100}>2002 ... 2009</MenuItem>
+              <MenuItem value={110}>2010 ... 2015</MenuItem>
+              <MenuItem value={120}>2016 ...</MenuItem>
+            </Select>
+          </FormControl>
+          <Button
+            sx={{ ml: 3.5, mt: 3, width: "34ch" }}
+            color="success"
+            variant="contained"
+          >
+            Load Building
+          </Button>
+        </Form>
+      </FormContainer>
+    </MainContent>
+  );
+}
+
+export default Body1;
