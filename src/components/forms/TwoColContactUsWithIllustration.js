@@ -34,7 +34,7 @@ export default ({
   subheading = "Contact Us",
   heading = <>Feel free to <span tw="text-primary-333">get in touch</span><wbr/> with us.</>,
   description = "Our experts are happy to answer your questions and to consult you in your property development processes.",
-  submitButtonText = "Contact Ue",
+  submitButtonText = "Contact Us",
   formAction = "#",
   formMethod = "get",
   textOnLeft = true,

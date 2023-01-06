@@ -10,6 +10,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from 'react-router-dom';
 
 const FormContainer = tw.div`w-full flex-1 mt-8`;
 const Form = tw.form`mx-auto max-w-xs`;
@@ -117,6 +118,8 @@ function Body1() {
           <Button
             sx={{ ml: 3.5, mt: 3, width: "34ch" }}
             color="success"
+            component={Link} 
+            to="/calculation"
             variant="contained"
           >
             Load Building

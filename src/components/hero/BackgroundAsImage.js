@@ -3,7 +3,14 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
+import Header, {
+  NavLink,
+  NavLinks,
+  PrimaryLink,
+  LogoLink,
+  NavToggle,
+  DesktopNavLinks,
+} from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const StyledHeader = styled(Header)`
@@ -58,24 +65,14 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        About
-      </NavLink>
-      <NavLink href="#">
-        Team
-      </NavLink>
-      <NavLink href="#">
-        Pricing
-      </NavLink>
-      <NavLink href="#">
-        FAQs
-      </NavLink>
+      <NavLink href="#">About</NavLink>
+      <NavLink href="#">Team</NavLink>
+      <NavLink href="#">Pricing</NavLink>
+      <NavLink href="#">FAQs</NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/building">
-        Start Now
-      </PrimaryLink>
-    </NavLinks>
+      <PrimaryLink href="/building">Start Now</PrimaryLink>
+    </NavLinks>,
   ];
 
   return (
@@ -86,15 +83,16 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Notification>What we do</Notification>
-            <Heading>
+            <Heading >
               <SlantedBackground>new construction</SlantedBackground>
               <br />
               <span>vs.</span>
               <br />
               <SlantedBackground>renovation</SlantedBackground>
-
             </Heading>
-            <PrimaryAction>Get Started</PrimaryAction>
+            <NavLinks key={2}>
+              <PrimaryAction  href="/building">Start Now</PrimaryAction>
+            </NavLinks>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed
