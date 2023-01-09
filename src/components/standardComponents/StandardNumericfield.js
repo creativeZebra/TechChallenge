@@ -1,6 +1,8 @@
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import { NumericFormat } from "react-number-format";
+import { Grid, Box } from '@mui/material';
+
 
 //Implements a Textfield with standard design for Number inputs
 //Only allows for numeric input values
@@ -35,22 +37,27 @@ export const StandardNumericField = (props) => {
 
     return (
         <>
-            <NumericFormat
-                customInput={TextField}
-                value={props.value == 0 ? "" : props.value}
-                label={props.label}
-                onValueChange={props.onValueChange}
-                placeholder="Please enter number"
-                InputProps={{
-                    endAdornment: (
-                        <InputAdornment position="start">
-                            {getInputAdormentText(props.InputAdornmentType)}
-                        </InputAdornment>
-                    ),
-                }}
-                decimalScale={getDecimalScale(props.DecimalScaleType)}
-                {...materialUiTextFieldProps}
-            />
+            <Grid item xs={12}>
+                <Box width="100%" textAlign="center">
+                    <NumericFormat
+                        sx={{ width: 6 / 10 }}
+                        customInput={TextField}
+                        value={props.value == 0 ? "" : props.value}
+                        label={props.label}
+                        onValueChange={props.onValueChange}
+                        placeholder="Please enter number"
+                        InputProps={{
+                            endAdornment: (
+                                <InputAdornment position="start">
+                                    {getInputAdormentText(props.InputAdornmentType)}
+                                </InputAdornment>
+                            ),
+                        }}
+                        decimalScale={getDecimalScale(props.DecimalScaleType)}
+                        {...materialUiTextFieldProps}
+                    />
+                </Box>
+            </Grid>
         </>
     );
 };

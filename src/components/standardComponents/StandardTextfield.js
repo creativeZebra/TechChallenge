@@ -7,7 +7,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 export const StandardTextField = (props) => {
   return (
     <TextField
-      //required -> Will be done in the instance
+    sx={{ width: 6 / 10 }}
       value={""}
       required={props.required}
       label={props.label}

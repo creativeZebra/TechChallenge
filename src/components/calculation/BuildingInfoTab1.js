@@ -7,6 +7,10 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Grid';
+
+
 
 
 function BuildingInfoTab1() {
@@ -95,7 +99,14 @@ function BuildingInfoTab1() {
         },
     ];
     return (
-        <>
+        <Grid
+            container
+            spacing={2}
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            sx={{ mt: 2 }}
+        >
             <StandardDropdown
                 heading={'Floors'}
                 label={'Floors'}
@@ -129,19 +140,93 @@ function BuildingInfoTab1() {
             </StandardNumericField>
             <StandardDropdown
                 heading={'Heating Situation Attic Rooms'}
-                label={'Apartments'}
+                label={'Heating Situation Attic Rooms'}
                 data={heatSituationAttic}
             ></StandardDropdown>
             <StandardDropdown
                 heading={'Heating Situation Cellar Rooms'}
-                label={'Apartments'}
+                label={'Heating Situation Cellar Rooms'}
                 data={heatSituationCellar}
             ></StandardDropdown>
-            <Typography>Results</Typography>
-            <Card>Total volume: X m³</Card>
-            <Card>Total net floor area: X m³</Card>
-            <Card>Total energy procurement area: X m³</Card>
-        </>
+            <Grid item xs={12}>
+                <Box width="100%" textAlign="center" mt={2}>
+                    <Typography variant="h5">Overview</Typography>
+                </Box>
+            </Grid>
+            <Grid item xs={4}>
+                <Box>
+                    <Card>
+                        <Box sx={{ minHeight: "80px", m: 2 }} textAlign="center">
+                            <Grid
+                                container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center"
+                                spacing={1}
+                            >
+                                <Grid item xs={12}>
+                                    <Typography display="inline" variant="h5">{"300"}</Typography>
+                                    <Typography display="inline" > m³</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography variant="subtitle2">Total </Typography>
+                                    <Typography variant="subtitle2">Volume</Typography>
+
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Card>
+                </Box>
+            </Grid>
+            <Grid item xs={4}>
+                <Box>
+                    <Card>
+                        <Box sx={{ minHeight: "80px", m: 2 }} textAlign="center">
+                            <Grid
+                                container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center"
+                                spacing={1}
+                            >
+                                <Grid item xs={12}>
+                                    <Typography display="inline" variant="h5">{"300"}</Typography>
+                                    <Typography display="inline" > m²</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography variant="subtitle2">Total</Typography>
+                                    <Typography variant="subtitle2">Net Floor Area</Typography>
+
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Card>
+                </Box>
+            </Grid>
+            <Grid item xs={4}>
+                <Box>
+                    <Card>
+                        <Box sx={{ minHeight: "80px", m: 2 }} textAlign="center">
+                            <Grid
+                                container
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center"
+                                spacing={1}
+                            >
+                                <Grid item xs={12}>
+                                    <Typography display="inline" variant="h5">{"300"}</Typography>
+                                    <Typography display="inline" > m²</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography variant="subtitle2">Total Energy Procurement Area</Typography>
+                                </Grid>
+                            </Grid>
+                        </Box>
+                    </Card>
+                </Box>
+            </Grid>
+        </Grid >
     )
 }
 
