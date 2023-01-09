@@ -22,7 +22,7 @@ function CalcBuildingInformation() {
 
   return (
     <>
-      <Card variant="outlined" sx={{ height: 400, mb: 4 }}>
+      <Card sx={{ height: 400, mb: 4 }}>
         <Grid
           container
           direction="row"
