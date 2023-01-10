@@ -273,38 +273,38 @@ function ComparisonInfoTab1({ gridChange }) {
                 <Grid
                     container
                     direction="row"
-                    justifyContent="center"
+                    justifyContent="flex-start"
                     alignItems="center"
                     spacing={4}
                 >
-                    <Grid item xs={12} md={12} lg={gridChange}>
+                    <Grid item xs={12} md={12} lg={8}>
                         <HighchartsReact highcharts={Highcharts} options={chartOptions1} />
                         <Box m={2}>
                             <Divider />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={gridChange}>
+                    <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions2} />
                         <Box m={2}>
                             <Divider />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={gridChange}>
+                    <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions3} />
                         <Box m={2}>
                             <Divider />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={gridChange}>
+                    <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions4} />
                         <Box m={2}>
                             <Divider />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={gridChange}>
+                    <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions5} />
                     </Grid>

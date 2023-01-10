@@ -10,9 +10,6 @@ import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Grid';
 
-
-
-
 function BuildingInfoTab1() {
 
     const floors = [
@@ -111,6 +108,7 @@ function BuildingInfoTab1() {
                 heading={'Floors'}
                 label={'Floors'}
                 data={floors}
+                value={2}
             ></StandardDropdown>
             <StandardDropdown
                 heading={'Apartments'}

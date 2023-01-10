@@ -22,18 +22,6 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
     setInitTabValue(newValue);
   };
 
-  const [gridChange, setGridChange] = React.useState(6);
-  const handleChangeGrid = (event) => {
-    if (gridChange == 6) {
-      setGridChange(10);
-
-    } else {
-      setGridChange(6);
-
-    }
-  };
-
-
   return (
     <Card>
       <Grid
@@ -46,11 +34,6 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
         <Grid item xs={12} sx={{ mt: 2 }}>
           <Box width="100%" textAlign="center">
             <Typography variant="h4">Variant Comparison</Typography>
-            <Button
-              color="success"
-              variant="text"
-              onClick={handleChangeGrid}><Typography sx={{ textTransform: "none" }} >Change Grid Size</Typography>
-            </Button>
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
@@ -71,9 +54,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                 </TabList>
               </Box>
               <TabPanel value="1">
-                <ComparisonInfoTab1
-                  gridChange={gridChange}
-                />
+                <ComparisonInfoTab1 />
               </TabPanel>
               <TabPanel value="2">
                 <ComparisonInfoTab2 />
