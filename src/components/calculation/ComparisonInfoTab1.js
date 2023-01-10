@@ -5,10 +5,10 @@ import { render } from "react-dom";
 import Card from '@mui/material/Card';
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 
 
-function ComparisonInfoTab1({ gridChange }) {
+function ComparisonInfoTab1() {
     const [chartOptions1, setChartOptions1] = useState({
         chart: {
             type: 'bar',
@@ -21,7 +21,7 @@ function ComparisonInfoTab1({ gridChange }) {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
                 'Ambitious Standard / NZEB'
             ],
@@ -70,7 +70,7 @@ function ComparisonInfoTab1({ gridChange }) {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
                 'Ambitious Standard / NZEB'
             ],
@@ -132,7 +132,7 @@ function ComparisonInfoTab1({ gridChange }) {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
                 'Ambitious Standard / NZEB'
             ],
@@ -181,7 +181,7 @@ function ComparisonInfoTab1({ gridChange }) {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
                 'Ambitious Standard / NZEB'
             ],
@@ -218,55 +218,6 @@ function ComparisonInfoTab1({ gridChange }) {
         }]
     });
 
-    const [chartOptions5, setChartOptions5] = useState({
-        chart: {
-            type: 'bar',
-            style: {
-                fontFamily: "'Roboto', sans-serif",
-            }
-        },
-        title: {
-            text: 'Energy Costs'
-        },
-        xAxis: {
-            categories: [
-                'National Minimum Requirement',
-                'Improved Standard',
-                'Ambitious Standard / NZEB'
-            ],
-            title: {
-                text: null
-            }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: '€ / (m²a)',
-                align: 'high'
-            },
-            labels: {
-                overflow: 'justify'
-            }
-        },
-        tooltip: {
-            valueSuffix: ' € / (m²a)'
-        },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: true
-                }
-            }
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'Annual Energy Costs for Heating and Domestic Hot Water',
-            data: [10, 7, 5]
-        }]
-    });
-
     return (
         <>
             <div>
@@ -283,11 +234,49 @@ function ComparisonInfoTab1({ gridChange }) {
                             <Divider />
                         </Box>
                     </Grid>
+                    <Grid item xs={12} md={12} lg={4}>
+                        <Box width="100%" textAlign="center">
+                            <Card sx={{
+                                backgroundColor: "#F5F5F5",
+                            }}>
+                                <Box m={6}>
+                                    <Typography variant="subtitle1">
+                                        {"After"}
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <strong>28.5  years</strong>
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        a new construction will be more sustainable than a renovation
+                                    </Typography>
+                                </Box>
+                            </Card>
+                        </Box>
+                    </Grid>
                     <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions2} />
                         <Box m={2}>
                             <Divider />
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={4}>
+                        <Box width="100%" textAlign="center">
+                            <Card sx={{
+                                backgroundColor: "#F5F5F5",
+                            }}>
+                                <Box m={6}>
+                                    <Typography variant="subtitle1">
+                                        {"After"}
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <strong>28.5  years</strong>
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        a new construction will be more sustainable than a renovation
+                                    </Typography>
+                                </Box>
+                            </Card>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={12} lg={8}>
@@ -297,6 +286,26 @@ function ComparisonInfoTab1({ gridChange }) {
                             <Divider />
                         </Box>
                     </Grid>
+                    <Grid item xs={12} md={12} lg={4}>
+                        <Box width="100%" textAlign="center">
+                            <Card sx={{
+                                backgroundColor: "#F5F5F5",
+                            }}>
+                                <Box m={6}>
+                                    <Typography variant="subtitle1">
+                                        {"After"}
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <strong>28.5  years</strong>
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        a new construction will be more sustainable than a renovation
+                                    </Typography>
+                                </Box>
+                            </Card>
+                        </Box>
+
+                    </Grid>
                     <Grid item xs={12} md={12} lg={8}>
 
                         <HighchartsReact highcharts={Highcharts} options={chartOptions4} />
@@ -304,9 +313,25 @@ function ComparisonInfoTab1({ gridChange }) {
                             <Divider />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={12} lg={8}>
+                    <Grid item xs={12} md={12} lg={4}>
+                        <Box width="100%" textAlign="center">
+                            <Card sx={{
+                                backgroundColor: "#F5F5F5",
+                            }}>
+                                <Box m={6}>
+                                    <Typography variant="subtitle1">
+                                        {"After"}
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <strong>28.5  years</strong>
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        a new construction will be more sustainable than a renovation
+                                    </Typography>
+                                </Box>
+                            </Card>
+                        </Box>
 
-                        <HighchartsReact highcharts={Highcharts} options={chartOptions5} />
                     </Grid>
                 </Grid>
             </div>
