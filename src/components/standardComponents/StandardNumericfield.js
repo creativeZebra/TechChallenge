@@ -2,6 +2,7 @@ import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import { NumericFormat } from "react-number-format";
 import { Grid, Box } from '@mui/material';
+import FormHelperText from '@mui/material/FormHelperText';
 
 
 //Implements a Textfield with standard design for Number inputs
@@ -14,6 +15,7 @@ export const StandardNumericField = (props) => {
         thousandSeparator: ".",
         allowNegative: false,
         decimalSeparator: ",",
+        
     };
     function getInputAdormentText(type) {
         switch (type) {
@@ -45,10 +47,12 @@ export const StandardNumericField = (props) => {
                         value={props.value == 0 ? "" : props.value}
                         label={props.label}
                         onValueChange={props.onValueChange}
+                        color="success"
                         placeholder="Please enter number"
+                        inputProps={{min: 0, style: { textAlign: 'center' }}}
                         InputProps={{
                             endAdornment: (
-                                <InputAdornment position="start">
+                                <InputAdornment position="end">
                                     {getInputAdormentText(props.InputAdornmentType)}
                                 </InputAdornment>
                             ),

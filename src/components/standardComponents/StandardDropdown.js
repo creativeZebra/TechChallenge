@@ -19,13 +19,13 @@ export const StandardDropdown = (props) => {
                         <InputLabel color="success">
                             {heading}
                         </InputLabel>
-                        <Select
+                        <Select 
                             value={props.value}
                             label={props.label}
                             color="success"
                         >
                             {props.data.map((option) => (
-                                <MenuItem key={option.value} value={option.value}>
+                                <MenuItem  key={option.value} value={option.value}>
                                     {option.label}
                                 </MenuItem>
                             ))}

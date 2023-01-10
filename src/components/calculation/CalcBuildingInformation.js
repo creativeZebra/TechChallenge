@@ -7,6 +7,10 @@ import TabPanel from '@mui/lab/TabPanel';
 import BuildingInfoTab1 from "components/calculation/BuildingInfoTab1";
 import BuildingInfoTab2 from "components/calculation/BuildingInfoTab2";
 import BuildingInfoTab3 from "components/calculation/BuildingInfoTab3";
+import Home from '@mui/icons-material/Home';
+import HouseSidingIcon from '@mui/icons-material/HouseSiding';
+import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+import ViewAgendaIcon from '@mui/icons-material/ViewAgenda';
 
 function CalcBuildingInformation() {
   // for tabs
@@ -41,9 +45,9 @@ function CalcBuildingInformation() {
                   indicatorColor="#276749"
                   centered
                 >
-                  <Tab label="Basic Information" value="1" sx={{ textTransform: "none" }} />
-                  <Tab label="Building Blocks" value="2" sx={{ textTransform: "none" }} />
-                  <Tab label="Housing System" value="3" sx={{ textTransform: "none" }} />
+                  <Tab icon={<Home color="success" />} label="Basic Information" value="1" sx={{ textTransform: "none" }} />
+                  <Tab icon={<ViewAgendaIcon color="success" />} label="Building Blocks" value="2" sx={{ textTransform: "none" }} />
+                  <Tab icon={<SettingsSuggestIcon color="success" />} label="Housing System" value="3" sx={{ textTransform: "none" }} />
                 </TabList>
               </Box>
               <TabPanel value="1">
