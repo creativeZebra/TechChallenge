@@ -87,11 +87,129 @@ function BuildingInfoTab2() {
   const doorMaterials1 = [
     {
       value: "1",
-      label: "Sandstone",
+      label: "Wood",
     },
     {
       value: "2",
-      label: "Clay Brick",
+      label: "Double Glazing",
+    },
+    {
+      value: "3",
+      label: "Plastic Frame",
+    },
+    {
+      value: "4",
+      label: "Triple Glazing",
+    },
+  ];
+  const windowMaterials = [
+    {
+      value: "1",
+      label: "Double Glazing, Plastic Frame",
+    },
+    {
+      value: "2",
+      label: "Double Glazing, Wooden Frame",
+    },
+    {
+      value: "3",
+      label: "Triple Glazing, Plastic Frame",
+    },
+    {
+      value: "4",
+      label: "Triple Glazing, Wooden Frame",
+    },
+    {
+      value: "5",
+      label: "Triple Glazing, Aluminium Frame",
+    },
+    {
+      value: "6",
+      label: "Vacuum Glazing, Plastic Frame",
+    },
+  ];
+  const roofMaterials = [
+    {
+      value: "1",
+      label: "Concrete",
+    },
+    {
+      value: "2",
+      label: "Rafter",
+    },
+    {
+      value: "3",
+      label: "Wood",
+    },
+    {
+      value: "4",
+      label: "Wooden Rafter",
+    },
+    {
+      value: "5",
+      label: "Gravel Fill",
+    },
+    {
+      value: "6",
+      label: "Solid Wood>",
+    },
+  ];
+  const roofMaterials2 = [
+    {
+      value: "1",
+      label: "Concrete Paving",
+    },
+    {
+      value: "2",
+      label: "Gravel",
+    },
+    {
+      value: "3",
+      label: "Wood Wool",
+    },
+    {
+      value: "4",
+      label: "Bricks",
+    },
+    {
+      value: "5",
+      label: "Mineral Wool",
+    },
+    {
+      value: "6",
+      label: "Wood",
+    },
+  ];
+  const roofMaterials3 = [
+    {
+      value: "1",
+      label: "Wood",
+    },
+    {
+      value: "2",
+      label: "Clay Board",
+    },
+    {
+      value: "3",
+      label: "Plaster",
+    },
+    {
+      value: "4",
+      label: "Gypsum Spatula",
+    },
+    {
+      value: "5",
+      label: "Filled Painting",
+    },
+  ];
+  const floorMaterials = [
+    {
+      value: "1",
+      label: "Steel Stone",
+    },
+    {
+      value: "2",
+      label: "Timber Frame",
     },
     {
       value: "3",
@@ -99,18 +217,65 @@ function BuildingInfoTab2() {
     },
     {
       value: "4",
-      label: "Full Bricks",
-    },
-    {
-      value: "5",
-      label: "Mud Bricks",
+      label: "CLT",
     },
     {
       value: "6",
       label: "Wood",
     },
   ];
-
+  const floorMaterials2 = [
+    {
+      value: "1",
+      label: "Cement Screed",
+    },
+    {
+      value: "2",
+      label: "Mineral Wool",
+    },
+    {
+      value: "3",
+      label: "Carpet Heated",
+    },
+    {
+      value: "4",
+      label: "Heated Screed",
+    },
+    {
+      value: "5",
+      label: "Wood Multi",
+    },
+    {
+      value: "6",
+      label: "Wood",
+    },
+  ];
+  const floorMaterials3 = [
+    {
+      value: "1",
+      label: "Paint",
+    },
+    {
+      value: "2",
+      label: "Mineral Wool",
+    },
+    {
+      value: "3",
+      label: "Metal Panel",
+    },
+    {
+      value: "4",
+      label: "Clay",
+    },
+    {
+      value: "5",
+      label: "Plaster",
+    },
+    {
+      value: "6",
+      label: "Wood",
+    },
+  ];
   return (
     <Grid
       container
@@ -266,7 +431,7 @@ function BuildingInfoTab2() {
         <Card sx={{ mt: 3, border: 1, borderColor: "#d2d6d2" }}>
           <Box
             sx={{
-              minHeight: "370px",
+              minHeight: "280px",
               minWidth: "510px",
               mt: 1,
             }}
@@ -280,7 +445,7 @@ function BuildingInfoTab2() {
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 1 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
                 <Typography variant="subtitle2">
-                  Load-Bearing Exterior Wall
+                  Door
                 </Typography>
               </Divider>
             </Box>
@@ -290,26 +455,21 @@ function BuildingInfoTab2() {
               justifyContent="center"
               spacing={0.5}
             >
-              <Grid item xs={6}>
+              <Grid item xs={8}>
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={doorMaterials1}
-                  value={5}
+                  data={windowMaterials}
+                  value={3}
                 ></StandardDropdown2>
               </Grid>
-              <Grid item xs={6}>
-                <StandardNumericField2
-                  value={"17,5"}
-                  label={"Thickness"}
-                  InputAdornmentType="CentiMeter"
-                  DecimalScaleType="Percentage"
-                ></StandardNumericField2>
+              <Grid item xs={4}>
+                
               </Grid>
             </Grid>
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
-                <Typography variant="subtitle2">Cladding Outside</Typography>
+                <Typography variant="subtitle2">Window</Typography>
               </Divider>
             </Box>
             <Grid
@@ -318,51 +478,19 @@ function BuildingInfoTab2() {
               justifyContent="center"
               spacing={0.5}
             >
-              <Grid item xs={6}>
+              <Grid item xs={8}>
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
-                  value={2}
+                  data={windowMaterials}
+                  value={4}
                 ></StandardDropdown2>
               </Grid>
-              <Grid item xs={6}>
-                <StandardNumericField2
-                  value={"216"}
-                  label={"Thickness"}
-                  InputAdornmentType="CentiMeter"
-                  DecimalScaleType="Percentage"
-                ></StandardNumericField2>
+              <Grid item xs={4}>
+                
               </Grid>
             </Grid>
-            <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
-              <Divider textAlign="left" sx={{ mr: 6 }}>
-                <Typography variant="subtitle2">Finishing Inside</Typography>
-              </Divider>
-            </Box>
-            <Grid
-              container
-              direction="row"
-              justifyContent="center"
-              spacing={0.5}
-            >
-              <Grid item xs={6}>
-                <StandardDropdown2
-                  heading={"Material"}
-                  label={"Material"}
-                  data={wallMaterials}
-                  value={2}
-                ></StandardDropdown2>
-              </Grid>
-              <Grid item xs={6}>
-                <StandardNumericField2
-                  value={"216"}
-                  label={"Thickness"}
-                  InputAdornmentType="CentiMeter"
-                  DecimalScaleType="Percentage"
-                ></StandardNumericField2>
-              </Grid>
-            </Grid>
+            
             <Grid
               container
               direction="row"
@@ -372,7 +500,7 @@ function BuildingInfoTab2() {
               <Grid item xs={12}>
                 <Box
                   width="100%"
-                  minHeight="50px"
+                  minHeight="31px"
                   sx={{
                     backgroundColor: "#eff7ed",
                     borderTop: 1,
@@ -387,15 +515,12 @@ function BuildingInfoTab2() {
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
                       <Typography variant="body2">
-                        Total Area: 3.181,57 m²
-                      </Typography>
-                      <Typography variant="body2">
-                        Total Thickness: 23,2 cm
+                        Total Area: 1.060,57 m²
                       </Typography>
                     </Grid>
-                    <Grid item xs={6} sx={{ mt: 2 }}>
+                    <Grid item xs={6} sx={{ mt: 0.6 }}>
                       <Typography variant="body2">
-                        U-Value: 0,24 W/(m²*K)
+                        U-Value: 1,20 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
@@ -423,7 +548,7 @@ function BuildingInfoTab2() {
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 1 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
                 <Typography variant="subtitle2">
-                  Load-Bearing Exterior Wall
+                  Structure
                 </Typography>
               </Divider>
             </Box>
@@ -437,13 +562,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
+                  data={roofMaterials}
                   value={2}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"17,5"}
+                  value={"20,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -452,7 +577,7 @@ function BuildingInfoTab2() {
             </Grid>
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
-                <Typography variant="subtitle2">Cladding Outside</Typography>
+                <Typography variant="subtitle2">Covering</Typography>
               </Divider>
             </Box>
             <Grid
@@ -465,13 +590,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
+                  data={roofMaterials2}
                   value={2}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"216"}
+                  value={"28,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -493,13 +618,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
+                  data={roofMaterials3}
                   value={2}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"216"}
+                  value={"1,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -529,16 +654,16 @@ function BuildingInfoTab2() {
                     textAlign="center"
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
-                      <Typography variant="body2">
-                        Total Area: 3.181,57 m²
+                      <Typography sx={{ ml: -2 }} variant="body2">
+                        Total Area: 3.848,31 m²
                       </Typography>
                       <Typography variant="body2">
-                        Total Thickness: 23,2 cm
+                        Total Thickness: 64,21 cm
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 2 }}>
                       <Typography variant="body2">
-                        U-Value: 0,24 W/(m²2*K)
+                        U-Value: 0,13 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
@@ -566,7 +691,7 @@ function BuildingInfoTab2() {
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 1 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
                 <Typography variant="subtitle2">
-                  Load-Bearing Exterior Wall
+                  Structure
                 </Typography>
               </Divider>
             </Box>
@@ -580,13 +705,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
+                  data={floorMaterials}
                   value={2}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"17,5"}
+                  value={"22,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -595,7 +720,7 @@ function BuildingInfoTab2() {
             </Grid>
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
-                <Typography variant="subtitle2">Cladding Outside</Typography>
+                <Typography variant="subtitle2">Flooring</Typography>
               </Divider>
             </Box>
             <Grid
@@ -608,13 +733,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
+                  data={floorMaterials2}
                   value={2}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"216"}
+                  value={"5,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -623,7 +748,7 @@ function BuildingInfoTab2() {
             </Grid>
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
               <Divider textAlign="left" sx={{ mr: 6 }}>
-                <Typography variant="subtitle2">Finishing Inside</Typography>
+                <Typography variant="subtitle2">Finishing</Typography>
               </Divider>
             </Box>
             <Grid
@@ -636,13 +761,13 @@ function BuildingInfoTab2() {
                 <StandardDropdown2
                   heading={"Material"}
                   label={"Material"}
-                  data={wallMaterials}
-                  value={2}
+                  data={floorMaterials3}
+                  value={4}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"216"}
+                  value={"1,0"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -672,16 +797,16 @@ function BuildingInfoTab2() {
                     textAlign="center"
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
-                      <Typography variant="body2">
-                        Total Area: 3.181,57 m²
+                      <Typography sx={{ ml: -0.9 }} variant="body2">
+                        Total Area: 15.393,23 m²
                       </Typography>
                       <Typography variant="body2">
-                        Total Thickness: 23,2 cm
+                        Total Thickness: 31,03 cm
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 2 }}>
                       <Typography variant="body2">
-                        U-Value: 0,24 W/(m²*K)
+                        U-Value: 0,148 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
