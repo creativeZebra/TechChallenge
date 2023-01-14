@@ -35,7 +35,7 @@ function CalcBuildingInformation() {
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
-          <Box sx={{ width: '100%', typography: 'body1' }}>
+          <Box sx={{ width: '100%', typography: 'body1'}}>
             <TabContext value={initTabValue}>
               <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <TabList
@@ -51,10 +51,17 @@ function CalcBuildingInformation() {
                 </TabList>
               </Box>
               <TabPanel value="1">
+                
                 <BuildingInfoTab1 />
               </TabPanel>
               <TabPanel value="2">
+              <Box sx={{overflowY: "auto",
+              maxHeight: "900px",
+              display: "flex",
+              flexGrow: 1,
+              flexDirection: "column", m:-1}}>
                 <BuildingInfoTab2 />
+                </Box>
               </TabPanel>
               <TabPanel value="3">
                 <BuildingInfoTab3 />
