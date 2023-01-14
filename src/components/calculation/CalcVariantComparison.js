@@ -8,12 +8,9 @@ import ComparisonInfoTab1 from "components/calculation/ComparisonInfoTab1";
 import ComparisonInfoTab2 from "components/calculation/ComparisonInfoTab2";
 import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3";
 import ComparisonInfoTab4 from "components/calculation/ComparisonInfoTab4";
+import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 import Button from '@mui/material/Button';
-import tw from "twin.macro";
-import styled from "styled-components";
-import CardContent from '@mui/material/CardContent';
-import { StandardDropdown } from "components/standardComponents/StandardDropdown";
-
+import Stack from '@mui/material/Stack';
 
 function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
   // for tabs
@@ -31,6 +28,32 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
         alignItems="flex-start"
         sx={{ mt: 2 }}
       >
+        <Grid item xs={12}>
+          <Box mr={2}>
+            <Box
+              width="100%"
+              sx={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}>
+              <Stack direction="row" spacing={2}>
+                <Button variant="contained"
+                  sx={{
+                    backgroundColor: '#276749',
+                    '&:hover': {
+                      backgroundColor: '#1B5E20',
+                      color: '#ffffff',
+                    }
+                  }}
+                startIcon={<CloudDownloadOutlinedIcon />}>
+                  <Typography sx={{ textTransform: "none" }}>Export Report</Typography>
+                </Button>
+              </Stack>
+
+
+            </Box>
+          </Box>
+        </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
           <Box width="100%" textAlign="center">
             <Typography variant="h4">Variant Comparison</Typography>
