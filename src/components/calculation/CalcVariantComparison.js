@@ -23,7 +23,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
   };
 
   return (
-    <Card>
+    <Card sx={{ mb: 4 }}>
       <Grid
         container
         direction="row"
