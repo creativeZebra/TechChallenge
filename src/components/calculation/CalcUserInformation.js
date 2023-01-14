@@ -42,7 +42,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   ];
 
   return (
-    <Card>
+    <Card sx={{mb:5}}>
       <Box width="100%" textAlign="center" mt={4} mb={3}>
         <Typography variant="h4">Variant Comparison</Typography>
       </Box>
@@ -66,13 +66,16 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               required fields.
             </Typography>
           </Grid>
-          <Grid item xs={12}>
-            <Box width="100%">
-              <img src={houseImage} alt="house"/>
+          <Grid item xs={12} textAlign="center" alignContent="center">
+            <Box
+              width="100%"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <img src={houseImage} alt="house" />
             </Box>
-          </Grid>
-          <Grid item xs={12}>
-            <Box width="100%" textAlign="center" mt={2}>
+            <Box width="100%" alignSelf="center" mt={2}>
               <Typography variant="h6">Compare Your Building With</Typography>
             </Box>
           </Grid>
