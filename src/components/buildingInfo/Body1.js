@@ -69,7 +69,7 @@ function Body1() {
         <Home sx={{ color: 'action.active', mr: 1, my: 2 }} />
           <TextField
             id="outlined-basic"
-            label="Building Address"
+            label="Building Postcode & City"
             variant="outlined"
             sx={{ mt: 0.5, width: "32ch" }}
             color="success"

@@ -38,15 +38,15 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   const buildingComparisons = [
     {
       value: "Building 1",
-      label: "KfW 40",
+      label: "Standard Renovation (KfW 40)",
     },
     {
       value: "New Building",
-      label: "KfW 50",
+      label: "Advanced Renovation (KfW 50)",
     },
     {
       value: "Building 2",
-      label: "KfW 55",
+      label: "New Building (KfW 55)",
     },
   ];
 
@@ -68,7 +68,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               <Typography variant="h6">Comparison Model Created</Typography>
             </Box>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} textAlign="center">
             <Typography>
               Please update your building information. You can compare your
               building with different alternatives as soon as you filled in all

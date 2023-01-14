@@ -285,7 +285,7 @@ function BuildingInfoTab2() {
       sx={{ mt: -1 }}
     >
       <Grid item xs={12}>
-        <Card sx={{ mt: 1, border: 1, borderColor: "#d2d6d2" }}>
+        <Card sx={{ mt: 2, border: 1, borderColor: "#d2d6d2" }}>
           <Box
             sx={{
               minHeight: "370px",
