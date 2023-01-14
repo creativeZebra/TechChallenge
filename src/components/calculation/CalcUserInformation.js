@@ -88,6 +88,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               <Typography variant="h6">Compare Your Building With</Typography>
             </Box>
           </Grid>
+          <Grid item xs={12}></Grid>
           <Grid item xs={12}>
             <StandardDropdown
               heading={"Building Comparison 1"}
