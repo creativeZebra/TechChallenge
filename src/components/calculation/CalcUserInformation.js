@@ -14,6 +14,11 @@ import styled from "styled-components";
 import CardContent from "@mui/material/CardContent";
 import { StandardDropdown } from "components/standardComponents/StandardDropdown";
 import houseImage from "images/house.png";
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+import Stack from '@mui/material/Stack';
+
 
 function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   // for tabs
@@ -21,6 +26,10 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   const handleTabChange = (event, newValue) => {
     setInitTabValue(newValue);
   };
+
+  // for more comparison fields
+  const [addComparisonField, setAddComparisonField] = React.useState(0)
+
 
   const handleHideGraphs = (event) => {
     setHideGraphs(false);
@@ -42,7 +51,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   ];
 
   return (
-    <Card sx={{mb:5}}>
+    <Card sx={{ mb: 5 }}>
       <Box width="100%" textAlign="center" mt={4} mb={3}>
         <Typography variant="h4">Variant Comparison</Typography>
       </Box>
@@ -79,7 +88,6 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               <Typography variant="h6">Compare Your Building With</Typography>
             </Box>
           </Grid>
-          <Grid item xs={12}></Grid>
           <Grid item xs={12}>
             <StandardDropdown
               heading={"Building Comparison 1"}
@@ -87,13 +95,98 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               data={buildingComparisons}
             ></StandardDropdown>
           </Grid>
+          {addComparisonField > 0 && (
+            <Grid item xs={12}>
+              <StandardDropdown
+                heading={"Building Comparison 2"}
+                label={"Building Comparison 2"}
+                data={buildingComparisons}
+              ></StandardDropdown>
+            </Grid>
+          )
+          }
+          {addComparisonField > 1 && (
+            <Grid item xs={12}>
+              <StandardDropdown
+                heading={"Building Comparison 3"}
+                label={"Building Comparison 3"}
+                data={buildingComparisons}
+              ></StandardDropdown>
+            </Grid>
+          )
+          }
+          {addComparisonField > 2 && (
+            <Grid item xs={12}>
+              <StandardDropdown
+                heading={"Building Comparison 4"}
+                label={"Building Comparison 4"}
+                data={buildingComparisons}
+              ></StandardDropdown>
+            </Grid>
+          )
+          }
+          {addComparisonField > 3 && (
+            <Grid item xs={12}>
+              <StandardDropdown
+                heading={"Building Comparison 5"}
+                label={"Building Comparison 5"}
+                data={buildingComparisons}
+              ></StandardDropdown>
+            </Grid>
+          )
+          }
+
           <Grid item xs={12}>
-            <StandardDropdown
-              heading={"Building Comparison 2"}
-              label={"Building Comparison 2"}
-              data={buildingComparisons}
-            ></StandardDropdown>
+            <Box width="100%" textAlign="center">
+              <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={0}
+              >
+                {addComparisonField < 4 && (
+                  <Button onClick={() => setAddComparisonField(addComparisonField + 1)}>
+                    <Fab
+                      size="small"
+                      sx={{
+                        backgroundColor: '#2E7D32',
+                        color: '#ffffff',
+                        '&:hover': {
+                          backgroundColor: '#276749',
+                          color: '#ffffff',
+                        }
+                      }}
+                    >
+                      <AddIcon />
+                    </Fab>
+                  </Button>
+                )}
+                {addComparisonField > 0 && (
+                  <Box>
+                    <Button onClick={() => setAddComparisonField(addComparisonField - 1)}>
+                      <Fab
+                        size="small"
+                        sx={{
+                          backgroundColor: '#616161',
+                          color: '#ffffff',
+                          '&:hover': {
+                            backgroundColor: '#424242',
+                            color: '#ffffff',
+                          }
+                        }}
+                      >
+                        <RemoveIcon />
+                      </Fab>
+                    </Button>
+                  </Box>
+                )
+                }
+              </Stack>
+            </Box>
+
           </Grid>
+
+
           <Grid item xs={12}>
             <Box width="100%" textAlign="center" mt={2} mb={2}>
               <Button
@@ -109,7 +202,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
           </Grid>
         </Grid>
       </Box>
-    </Card>
+    </Card >
   );
 }
 

@@ -39,9 +39,9 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
               <Stack direction="row" spacing={2}>
                 <Button variant="contained"
                   sx={{
-                    backgroundColor: '#276749',
+                    backgroundColor: '#2E7D32',
                     '&:hover': {
-                      backgroundColor: '#1B5E20',
+                      backgroundColor: '#276749',
                       color: '#ffffff',
                     }
                   }}
