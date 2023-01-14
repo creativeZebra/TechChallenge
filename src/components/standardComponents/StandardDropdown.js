@@ -20,6 +20,7 @@ export const StandardDropdown = (props) => {
                             {heading}
                         </InputLabel>
                         <Select 
+                            onClose={props.onClose}
                             value={props.value}
                             label={props.label}
                             color="success"

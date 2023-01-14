@@ -30,6 +30,13 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   // for more comparison fields
   const [addComparisonField, setAddComparisonField] = React.useState(0)
 
+  // for button
+  const [activateButton, setActivateButton] = React.useState(false)
+
+  const handleActivateButton = (event) => {
+    setActivateButton(true);
+    console.log("Fire")
+  };
 
   const handleHideGraphs = (event) => {
     setHideGraphs(false);
@@ -94,6 +101,7 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
               heading={"Building Comparison 1"}
               label={"Building Comparison 1"}
               data={buildingComparisons}
+              onClose={handleActivateButton}
             ></StandardDropdown>
           </Grid>
           {addComparisonField > 0 && (
@@ -184,23 +192,38 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
                 }
               </Stack>
             </Box>
-
           </Grid>
-
-
-          <Grid item xs={12}>
-            <Box width="100%" textAlign="center" mt={2} mb={2}>
-              <Button
-                color="success"
-                variant="contained"
-                onClick={handleHideGraphs}
-              >
-                <Typography sx={{ textTransform: "none" }}>
-                  Compare Variants
-                </Typography>
-              </Button>
-            </Box>
-          </Grid>
+          {activateButton === false && (
+            <Grid item xs={12}>
+              <Box width="100%" textAlign="center" mt={2} mb={2}>
+                <Button
+                  color="success"
+                  variant="contained"
+                  onClick={handleHideGraphs}
+                  disabled
+                >
+                  <Typography sx={{ textTransform: "none" }}>
+                    Compare Variants
+                  </Typography>
+                </Button>
+              </Box>
+            </Grid>
+          )}
+          {activateButton === true && (
+            <Grid item xs={12}>
+              <Box width="100%" textAlign="center" mt={2} mb={2}>
+                <Button
+                  color="success"
+                  variant="contained"
+                  onClick={handleHideGraphs}
+                >
+                  <Typography sx={{ textTransform: "none" }}>
+                    Compare Variants
+                  </Typography>
+                </Button>
+              </Box>
+            </Grid>
+          )}
         </Grid>
       </Box>
     </Card >
