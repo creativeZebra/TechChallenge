@@ -48,7 +48,7 @@ export default ({
       <br/><wbr /> property decisions <wbr /> 
     </>
   ),
-  description = "With our SustainaBuild Web-App, we provide a user-friendly tool that benchmarks the economic and ecological impacts of new constructions against refurbishments as simply as possible and understandable for everyone",
+  description = "With our ReBuild Web-App, we provide a user-friendly tool that benchmarks the economic and ecological impacts of new constructions against refurbishments as simply as possible and understandable for everyone",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "/",
   imageSrc = "https://www.freevector.com/uploads/vector/preview/27652/Renovation_vector_5.jpg",

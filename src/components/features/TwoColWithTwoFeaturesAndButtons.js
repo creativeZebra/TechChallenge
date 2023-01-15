@@ -49,7 +49,7 @@ export default ({
   subheading = "Our Expertise",
   heading = (
     <>
-      Get to know our <br/><span tw="text-primary-333">highly skilled </span> SustainaBuild experts.
+      Get to know our <br/><span tw="text-primary-333">highly skilled </span> ReBuild experts.
     </>
   ),
   description = "We are a multidisciplinary team consisting of Management & Technology and Information Systems master students from the Technical University of Munich.",

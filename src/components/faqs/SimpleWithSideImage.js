@@ -52,16 +52,16 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "Is the SustainaBuild App for free ?",
+      question: "Is the ReBuild App for free ?",
       answer:
         "Yes, it is. You can use the basic funcitonalities for free. You can subscribe to a premium membership to unlock enhanced features."
     },
     {
-      question: "Who can use the SustainaBuild App ?",
+      question: "Who can use the ReBuild App ?",
       answer: "Our App is easy understandable and designed for everyone."
     },
     {
-      question: "What kind of buildings can I score with the SustainaBuild app ?",
+      question: "What kind of buildings can I score with the ReBuild app ?",
       answer:
         "We support all kinds of german residence buildings."
     },
