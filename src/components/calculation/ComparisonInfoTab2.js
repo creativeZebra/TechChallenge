@@ -120,6 +120,9 @@ function ComparisonInfoTab2() {
             name: 'Electricity Generation',
             data: [80000, 0],
         }, {
+            name: 'Demolition Costs',
+            data: [0, 20000],
+        }, {
             name: 'Initial Building Costs',
             data: [0, 450000],
         }]
