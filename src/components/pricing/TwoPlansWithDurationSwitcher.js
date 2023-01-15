@@ -70,14 +70,14 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 
 export default ({
   subheading = "Pricing",
-  heading = "Flexible Plans.",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Price per Project",
+  description = "",
   plans = null,
   primaryButtonText = "Buy Now",
   planDurations = [
     {
-      text: "Month",
-      switcherText: "Monthly",
+      text: "Project",
+      switcherText: "Project",
     },
     {
       text: "Year",
@@ -87,18 +87,11 @@ export default ({
 }) => {
   const defaultPlans = [
     {
-      name: "Free Plan",
-      durationPrices: ["$0", "$0"],
-      mainFeature: "For Personal Blogs",
-      features: ["30 Templates", "7 Landing Pages", "12 Internal Pages", "Basic Assistance"]
+      name: "Basic Plan",
+      durationPrices: ["99€", "99€"],
+      mainFeature: "For a 3-Month Project",
+      features: ["Unlimited Comparisons", "Detailed Report", "Reference Building Data", "Basic Assistance"]
     },
-    {
-      name: "Pro Plan",
-      durationPrices: ["$49", "$499"],
-      mainFeature: "Suited for Production Websites",
-      features: ["60 Templates", "8 Landing Pages", "22 Internal Pages", "Priority Assistance", "Lifetime Updates"],
-      featured: true
-    }
   ];
 
   if (!plans) plans = defaultPlans;
@@ -112,11 +105,6 @@ export default ({
           {subheading && <Subheading>{subheading}</Subheading>}
           <Heading>{heading}</Heading>
           {description && <Description>{description}</Description>}
-        <PlanDurationSwitcher>
-          {planDurations.map((planDuration, index) => (
-            <SwitchButton active={activeDurationIndex === index} key={index} onClick={() => setActiveDurationIndex(index)}>{planDuration.switcherText}</SwitchButton>
-          ))}
-        </PlanDurationSwitcher>
         </HeaderContainer>
         <PlansContainer>
           {plans.map((plan, index) => (

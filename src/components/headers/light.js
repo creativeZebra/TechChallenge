@@ -89,7 +89,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logoGreen} alt="logo" />
-      SustainaBuild.
+      ReBuild.
     </LogoLink>
   );
 
