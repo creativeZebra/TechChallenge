@@ -268,7 +268,7 @@ function ComparisonInfoTab1() {
                                         <strong>162,5 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                    fossil fuels by replacing the energy carriers and adding a photovoltaic system
+                                    fossil fuels by improving your heating system
                                     </Typography>
                                 </Box>
                             </Card>
