@@ -54,7 +54,7 @@ export default ({
     {
       question: "Is the ReBuild App for free ?",
       answer:
-        "Yes, it is. You can use the basic funcitonalities for free. You can subscribe to a premium membership to unlock enhanced features."
+        "You can buy a basic plan to unlock a 3-month project."
     },
     {
       question: "Who can use the ReBuild App ?",

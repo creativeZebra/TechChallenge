@@ -88,7 +88,7 @@ export default ({
   const defaultPlans = [
     {
       name: "Basic Plan",
-      durationPrices: ["99€", "99€"],
+      durationPrices: ["199€", "199€"],
       mainFeature: "For a 3-Month Project",
       features: ["Unlimited Comparisons", "Detailed Report", "Reference Building Data", "Basic Assistance"]
     },

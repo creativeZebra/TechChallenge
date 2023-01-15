@@ -139,7 +139,7 @@ function BuildingInfoTab3() {
       direction="row"
       justifyContent="center"
       alignItems="center"
-      sx={{ mt: 1 }}
+      sx={{ mt: 1 , mb:1.4}}
     >
       <Box width="100%" textAlign="center">
         <Divider sx={{ ml: 2 }}>
