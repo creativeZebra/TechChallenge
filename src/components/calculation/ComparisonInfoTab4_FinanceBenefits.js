@@ -151,7 +151,7 @@ function ComparisonInfoTab4() {
             <Box width="100%" textAlign="center">
                 <Typography variant="h5">Efficiency house levels and funding at a glance</Typography>
             </Box>
-            <Box mt={2} mb={2} >
+            <Box mt={2} mb={2}  textAlign="center">
                 <Typography>{"If you renovate a residential building into an efficiency house or buy a freshly renovated efficiency house, the "}
                     <Link
                         href="https://www.kfw.de/inlandsfoerderung/Privatpersonen/Bestehende-Immobilie/Energieeffizient-sanieren/Das-Effizienzhaus/"
