@@ -45,7 +45,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                       color: '#ffffff',
                     }
                   }}
-                startIcon={<CloudDownloadOutlinedIcon />}>
+                  startIcon={<CloudDownloadOutlinedIcon />}>
                   <Typography sx={{ textTransform: "none" }}>Export Report</Typography>
                 </Button>
               </Stack>
@@ -56,7 +56,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
           <Box width="100%" textAlign="center">
-            <Typography variant="h4">Variant Comparison</Typography>
+            <Typography variant="h4">Your Individual Report</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
@@ -70,9 +70,10 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                   indicatorColor="#276749"
                   centered
                 >
+                  <Tab label="Overview" value="5" sx={{ textTransform: "none" }} />
+                  <Tab label="Total Comparison" value="3" sx={{ textTransform: "none" }} />
                   <Tab label="Energy Consumption" value="1" sx={{ textTransform: "none" }} />
                   <Tab label="Costs" value="2" sx={{ textTransform: "none" }} />
-                  <Tab label="Total Comparison" value="3" sx={{ textTransform: "none" }} />
                   <Tab label="Finance Benefits" value="4" sx={{ textTransform: "none" }} />
                 </TabList>
               </Box>

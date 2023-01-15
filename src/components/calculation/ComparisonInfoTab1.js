@@ -11,7 +11,7 @@ import { Grid, Typography } from '@mui/material';
 function ComparisonInfoTab1() {
     const [chartOptions1, setChartOptions1] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }
@@ -60,7 +60,7 @@ function ComparisonInfoTab1() {
 
     const [chartOptions2, setChartOptions2] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }
@@ -122,7 +122,7 @@ function ComparisonInfoTab1() {
 
     const [chartOptions3, setChartOptions3] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }
@@ -171,7 +171,7 @@ function ComparisonInfoTab1() {
 
     const [chartOptions4, setChartOptions4] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }

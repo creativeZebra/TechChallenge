@@ -17,7 +17,7 @@ function ComparisonInfoTab2() {
 
     const [chartOptions1, setChartOptions1] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }
@@ -27,7 +27,7 @@ function ComparisonInfoTab2() {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
                 'Nearly zero-energy building'
             ],
