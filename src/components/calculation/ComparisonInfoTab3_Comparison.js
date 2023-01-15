@@ -8,383 +8,427 @@ import Box from "@mui/material/Box";
 import { Grid, Typography } from '@mui/material';
 
 Highcharts.setOptions({
-    lang: {
-        thousandsSep: '.'
-    },
+  lang: {
+    thousandsSep: '.'
+  },
 })
 
 function ComparisonInfoTab3() {
 
-    const [chartOptions1, setChartOptions1] = useState({
-        chart: {
-            style: {
-                fontFamily: "'Roboto', sans-serif",
-            }
-        },
-        title: {
-            text: 'Sustainability Comparison'
-        },
+  const [chartOptions1, setChartOptions1] = useState({
+    chart: {
+      style: {
+        fontFamily: "'Roboto', sans-serif",
+      }
+    },
+    title: {
+      text: 'Sustainability Comparison'
+    },
 
-        credits: {
-            enabled: false
-        },
+    credits: {
+      enabled: false
+    },
 
-        yAxis: {
-            title: {
-                text: 'cumulated energy consumption in kWh'
-            }
-        },
+    yAxis: {
+      title: {
+        text: 'cumulated energy consumption in kWh'
+      }
+    },
 
-        xAxis: {
-            title: {
-                text: 'Years'
-            },
-            plotLines: [{
-                color: '', // Color value
-                dashStyle: 'dot', // Style of the plot line. Default to solid
-                value: 28.5, // Value of where the line will appear
-                width: 2 // Width of the line    
-            }]
-        },
+    xAxis: {
+      title: {
+        text: 'Years'
+      },
+      plotLines: [{
+        color: '', // Color value
+        dashStyle: 'dot', // Style of the plot line. Default to solid
+        value: 11.3, // Value of where the line will appear
+        width: 2 // Width of the line    
+      }]
+    },
 
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle'
-        },
+    legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+    },
 
-        plotOptions: {
-            series: {
-                label: {
-                    connectorAllowed: false
-                },
-                pointStart: 0,
-            },
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
         },
-        tooltip: {
-            pointFormat: '{series.name}<br/>Cumulated kWh in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> kWh',
+        pointStart: 0,
+      },
+    },
+    tooltip: {
+      pointFormat: '{series.name}<br/>Cumulated kWh in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> kWh',
+    },
+    series: [{
+      name: 'Your Building',
+      data: [36668,
+        130763,
+        224858,
+        318953,
+        413048,
+        507143,
+        601238,
+        695333,
+        789428,
+        883523,
+        977618,
+        1071713,
+        1165808,
+        1259903,
+        1353998,
+        1448093,
+        1542188,
+        1636283,
+        1730378,
+        1824473,
+        1918568,
+        2012663,
+        2106758,
+        2200853,
+        2294948,
+        2389043,
+        2483138,
+        2577233,
+        2671328,
+        2765423,
+        2859518,
+        2953613,
+        3047708,
+        3141803,
+        3235898,
+        3329993,
+        3424088,
+        3518183,
+        3612278,
+      ],
+      color: '#43A047'
+    }, {
+      name: 'New / Renovated Building',
+      data: [770018,
+        799352,
+        828686,
+        858020,
+        887354,
+        916688,
+        946022,
+        975356,
+        1004690,
+        1034024,
+        1063358,
+        1092692,
+        1122026,
+        1151360,
+        1180694,
+        1210028,
+        1239362,
+        1268696,
+        1298030,
+        1327364,
+        1356698,
+        1386032,
+        1415366,
+        1444700,
+        1474034,
+        1503368,
+        1532702,
+        1562036,
+        1591370,
+        1620704,
+        1650038,
+        1679372,
+        1708706,
+        1738040,
+        1767374,
+        1796708,
+        1826042,
+        1855376,
+        1884710
+      ],
+      color: '#00695C'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
         },
-        series: [{
-            name: 'Renovation',
-            data: [200000,
-                209500,
-                219000,
-                228500,
-                238000,
-                247500,
-                257000,
-                266500,
-                276000,
-                285500,
-                295000,
-                304500,
-                314000,
-                323500,
-                333000,
-                342500,
-                352000,
-                361500,
-                371000,
-                380500,
-                390000,
-                399500,
-                409000,
-                418500,
-                428000,
-                437500,
-                447000,
-                456500,
-                466000,
-                475500,
-                485000,
-                494500,
-                504000,
-                513500,
-                523000,
-                532500,
-                542000,
-                551500,
-                561000,
-            ],
-            color: '#43A047'
-        }, {
-            name: 'New Building',
-            data: [410000,
-                412200,
-                414400,
-                416600,
-                418800,
-                421000,
-                423200,
-                425400,
-                427600,
-                429800,
-                432000,
-                434200,
-                436400,
-                438600,
-                440800,
-                443000,
-                445200,
-                447400,
-                449600,
-                451800,
-                454000,
-                456200,
-                458400,
-                460600,
-                462800,
-                465000,
-                467200,
-                469400,
-                471600,
-                473800,
-                476000,
-                478200,
-                480400,
-                482600,
-                484800,
-                487000,
-                489200,
-                491400,
-                493600,
-            ],
-            color: '#00695C'
-        }],
-        responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 500
-                },
-                chartOptions: {
-                    legend: {
-                        layout: 'horizontal',
-                        align: 'center',
-                        verticalAlign: 'bottom'
-                    }
-                }
-            }]
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
         }
-    });
+      }]
+    }
+  });
 
-    const [chartOptions2, setChartOptions2] = useState({
-        chart: {
-            style: {
-                fontFamily: "'Roboto', sans-serif",
-            }
-        },
-        title: {
-            text: 'Cost Comparison'
-        },
+  const [chartOptions2, setChartOptions2] = useState({
+    chart: {
+      style: {
+        fontFamily: "'Roboto', sans-serif",
+      }
+    },
+    title: {
+      text: 'Cost Comparison'
+    },
 
-        credits: {
-            enabled: false
-        },
+    credits: {
+      enabled: false
+    },
 
-        yAxis: {
-            title: {
-                text: 'cumulated costs (one-time and running costs) in €'
-            }
-        },
+    yAxis: {
+      title: {
+        text: 'cumulated costs (one-time and running costs) in €'
+      }
+    },
 
-        xAxis: {
-            title: {
-                text: 'Years'
-            },
-            plotLines: [{
-                color: '', // Color value
-                dashStyle: 'dot', // Style of the plot line. Default to solid
-                value: 18.5, // Value of where the line will appear
-                width: 2 // Width of the line    
-            }]
-        },
+    xAxis: {
+      title: {
+        text: 'Years'
+      },
+      plotLines: [{
+        color: '', // Color value
+        dashStyle: 'dot', // Style of the plot line. Default to solid
+        value: 26.6, // Value of where the line will appear
+        width: 2 // Width of the line    
+      }]
+    },
 
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle'
-        },
+    legend: {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle'
+    },
 
-        plotOptions: {
-            series: {
-                label: {
-                    connectorAllowed: false
-                },
-                pointStart: 0
-            }
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false
         },
-        tooltip: {
-            pointFormat: '{series.name}<br/>Cumulated Costs in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> €',
+        pointStart: 0
+      }
+    },
+    tooltip: {
+      pointFormat: '{series.name}<br/>Cumulated Costs in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> €',
+    },
+    series: [{
+      name: 'Renovated Building',
+      data: [562320,
+        593842,
+        625364,
+        656886,
+        688408,
+        719930,
+        751452,
+        782974,
+        814496,
+        846018,
+        877540,
+        909062,
+        940584,
+        972106,
+        1003628,
+        1035150,
+        1066672,
+        1098194,
+        1129716,
+        1161238,
+        1192760,
+        1224282,
+        1255804,
+        1287326,
+        1318848,
+        1350370,
+        1381892,
+        1413414,
+        1444936,
+        1476458,
+        1507980,
+        1539502,
+        1571024,
+        1602546,
+        1634068,
+        1665590,
+        1697112,
+        1728634,
+        1760156,
+      ],
+      color: '#43A047'
+    }, {
+      name: 'New Building',
+      data: [1143000,
+        1152827,
+        1162654,
+        1172481,
+        1182308,
+        1192135,
+        1201962,
+        1211789,
+        1221616,
+        1231443,
+        1241270,
+        1251097,
+        1260924,
+        1270751,
+        1280578,
+        1290405,
+        1300232,
+        1310059,
+        1319886,
+        1329713,
+        1339540,
+        1349367,
+        1359194,
+        1369021,
+        1378848,
+        1388675,
+        1398502,
+        1408329,
+        1418156,
+        1427983,
+        1437810,
+        1447637,
+        1457464,
+        1467291,
+        1477118,
+        1486945,
+        1496772,
+        1506599,
+        1516426,
+      ],
+      color: '#00695C'
+    }, {
+      name: 'Your Building - Running Costs',
+      data: [31522,
+        63044,
+        94566,
+        126088,
+        157610,
+        189132,
+        220654,
+        252176,
+        283698,
+        315220,
+        346742,
+        378264,
+        409786,
+        441308,
+        472830,
+        504352,
+        535874,
+        567396,
+        598918,
+        630440,
+        661962,
+        693484,
+        725006,
+        756528,
+        788050,
+        819572,
+        851094,
+        882616,
+        914138,
+        945660,
+        977182,
+        1008704,
+        1040226,
+        1071748,
+        1103270,
+        1134792,
+        1166314,
+        1197836,
+        1229358,
+
+      ],
+      color: '#BDBDBD'
+    }],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
         },
-        series: [{
-            name: 'Renovation',
-            data: [315000,
-                324500,
-                334000,
-                343500,
-                353000,
-                362500,
-                372000,
-                381500,
-                391000,
-                400500,
-                410000,
-                419500,
-                429000,
-                438500,
-                448000,
-                457500,
-                467000,
-                476500,
-                486000,
-                495500,
-                505000,
-                514500,
-                524000,
-                533500,
-                543000,
-                552500,
-                562000,
-                571500,
-                581000,
-                590500,
-                600000,
-                609500,
-                619000,
-                628500,
-                638000,
-                647500,
-                657000,
-                666500,
-                676000,
-            ],
-            color: '#43A047'
-        }, {
-            name: 'New Building',
-            data: [450000,
-                452200,
-                454400,
-                456600,
-                458800,
-                461000,
-                463200,
-                465400,
-                467600,
-                469800,
-                472000,
-                474200,
-                476400,
-                478600,
-                480800,
-                483000,
-                485200,
-                487400,
-                489600,
-                491800,
-                494000,
-                496200,
-                498400,
-                500600,
-                502800,
-                505000,
-                507200,
-                509400,
-                511600,
-                513800,
-                516000,
-                518200,
-                520400,
-                522600,
-                524800,
-                527000,
-                529200,
-                531400,
-                533600,
-            ],
-            color: '#00695C'
-        }],
-        responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 500
-                },
-                chartOptions: {
-                    legend: {
-                        layout: 'horizontal',
-                        align: 'center',
-                        verticalAlign: 'bottom'
-                    }
-                }
-            }]
+        chartOptions: {
+          legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom'
+          }
         }
-    });
+      }]
+    }
+  });
 
 
-    return (
-        <>
-            <div>
-                <Grid
-                    container
-                    direction="row"
-                    justifyContent="flex-start"
-                    alignItems="center"
-                    spacing={4}
-                >
-                    
-                    <Grid item xs={12} md={12} lg={8}>
-                        <HighchartsReact highcharts={Highcharts} options={chartOptions2} />
-                        <Box m={2}>
-                            <Divider />
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={4}>
-                        <Box width="100%" textAlign="center">
-                            <Card sx={{
-                                backgroundColor: "#F5F5F5",
-                            }}>
-                                <Box m={6}>
-                                    <Typography variant="subtitle1">
-                                        {"After"}
-                                    </Typography>
-                                    <Typography variant="h6">
-                                        <strong>18.4  years</strong>
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        a new construction will be cheaper than a renovation
-                                    </Typography>
-                                </Box>
-                            </Card>
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={8}>
-                        <HighchartsReact highcharts={Highcharts} options={chartOptions1} />
-                        <Box m={2}>
-                            <Divider />
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={4}>
-                        <Box width="100%" textAlign="center">
-                            <Card sx={{
-                                backgroundColor: "#F5F5F5",
-                            }}>
-                                <Box m={6}>
-                                    <Typography variant="subtitle1">
-                                        {"After"}
-                                    </Typography>
-                                    <Typography variant="h6">
-                                        <strong>28.5  years</strong>
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
-                                    </Typography>
-                                </Box>
-                            </Card>
-                        </Box>
-                    </Grid>
-                </Grid>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div>
+        <Grid
+          container
+          direction="row"
+          justifyContent="flex-start"
+          alignItems="center"
+          spacing={4}
+        >
+
+          <Grid item xs={12} md={12} lg={8}>
+            <HighchartsReact highcharts={Highcharts} options={chartOptions2} />
+            <Box m={2}>
+              <Divider />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={12} lg={4}>
+            <Box width="100%" textAlign="center">
+              <Card sx={{
+                backgroundColor: "#F5F5F5",
+              }}>
+                <Box m={6}>
+                  <Typography variant="subtitle1">
+                    {"After"}
+                  </Typography>
+                  <Typography variant="h6">
+                    <strong>26.6  years</strong>
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    a new construction will be cheaper than a renovation
+                  </Typography>
+                </Box>
+              </Card>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={12} lg={8}>
+            <HighchartsReact highcharts={Highcharts} options={chartOptions1} />
+            <Box m={2}>
+              <Divider />
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={12} lg={4}>
+            <Box width="100%" textAlign="center">
+              <Card sx={{
+                backgroundColor: "#F5F5F5",
+              }}>
+                <Box m={6}>
+                  <Typography variant="subtitle1">
+                    {"After"}
+                  </Typography>
+                  <Typography variant="h6">
+                    <strong>11.3  years</strong>
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    a new construction will be more sustainable than a renovation
+                  </Typography>
+                </Box>
+              </Card>
+            </Box>
+          </Grid>
+        </Grid>
+      </div>
+    </>
+  );
 }
 
 export default ComparisonInfoTab3;
