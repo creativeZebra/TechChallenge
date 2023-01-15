@@ -150,13 +150,13 @@ function BuildingInfoTab3() {
         heading={"Heating System"}
         label={"Heating System"}
         data={heating}
-        value={3}
+        value={1}
       ></StandardDropdown>
       <StandardDropdown
         heading={"Hot Water System"}
         label={"Hot Water System"}
         data={hotWater}
-        value={3}
+        value={1}
       ></StandardDropdown>
       <Grid item xs={12}>
         <Box width="100%" textAlign="center" mt={2}>

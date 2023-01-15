@@ -45,15 +45,19 @@ function CalcUserInformation({ hideGraphs, setHideGraphs }) {
   const buildingComparisons = [
     {
       value: "Building 1",
-      label: "Standard Renovation (KfW 40)",
-    },
-    {
-      value: "New Building",
-      label: "Advanced Renovation (KfW 50)",
+      label: "Energy Effiency House 40 (KfW 40)",
     },
     {
       value: "Building 2",
-      label: "New Building (KfW 55)",
+      label: "Energy Effiency House 55 (KfW 55)",
+    },
+    {
+      value: "Building 3",
+      label: "Energy Effiency House 70 (KfW 70)",
+    },
+    {
+      value: "Building 4",
+      label: "Energy Effiency House 85 (KfW 85)",
     },
   ];
 

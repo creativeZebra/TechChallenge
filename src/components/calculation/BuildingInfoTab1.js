@@ -68,31 +68,39 @@ function BuildingInfoTab1() {
 
   const heatSituationCellar = [
     {
-      value: "Good",
-      label: "Good",
+      value: "1",
+      label: "Cellar non existent (flat roof)",
     },
     {
-      value: "Medium",
-      label: "Medium",
+      value: "2",
+      label: "Cellar not conditioned",
     },
     {
-      value: "Bad",
-      label: "Bad",
+      value: "3",
+      label: "Cellar partly conditioned",
+    },
+    {
+      value: "4",
+      label: "Cellar completely conditioned",
     },
   ];
 
   const heatSituationAttic = [
     {
-      value: "Good",
-      label: "Good",
+      value: "1",
+      label: "Attic non existent (flat roof)",
     },
     {
-      value: "Medium",
-      label: "Medium",
+      value: "2",
+      label: "Attic not conditioned",
     },
     {
-      value: "Bad",
-      label: "Bad",
+      value: "3",
+      label: "Attic partly conditioned",
+    },
+    {
+      value: "4",
+      label: "Attic completely conditioned",
     },
   ];
   return (
@@ -113,22 +121,16 @@ function BuildingInfoTab1() {
         heading={"Floors"}
         label={"Floors"}
         data={floors}
-        value={2}
-      ></StandardDropdown>
-      <StandardDropdown
-        heading={"Apartments"}
-        label={"Apartments"}
-        data={apartments}
         value={4}
       ></StandardDropdown>
       <StandardNumericField
-        value={"216"}
+        value={"489"}
         label={"Net floor area"}
         InputAdornmentType="SquareMeter"
         DecimalScaleType="Normal"
       ></StandardNumericField>
       <StandardNumericField
-        value={"2"}
+        value={"2,5"}
         label={"Story height"}
         InputAdornmentType="Meter"
         DecimalScaleType="Percentage"
@@ -136,23 +138,17 @@ function BuildingInfoTab1() {
       <Box width="100%" textAlign="center"  sx={{ mt: 2 }}>
       <Divider sx={{ ml: 2 }}> <Typography variant="h6">Heating</Typography> </Divider>
         </Box>
-      <StandardNumericField
-        value={"190"}
-        label={"Heated floor area"}
-        InputAdornmentType="SquareMeter"
-        DecimalScaleType="Normal"
-      ></StandardNumericField>
       <StandardDropdown
         heading={"Heating Situation Attic Rooms"}
         label={"Heating Situation Attic Rooms"}
         data={heatSituationAttic}
-        value={"Medium"}
+        value={"2"}
       ></StandardDropdown>
       <StandardDropdown
         heading={"Heating Situation Cellar Rooms"}
         label={"Heating Situation Cellar Rooms"}
         data={heatSituationCellar}
-        value={"Medium"}
+        value={"2"}
       ></StandardDropdown>
     </Grid>
   );
