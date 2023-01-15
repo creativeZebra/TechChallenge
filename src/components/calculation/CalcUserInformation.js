@@ -6,7 +6,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import ComparisonInfoTab1 from "components/calculation/ComparisonInfoTab1_Energy";
 import ComparisonInfoTab2 from "components/calculation/ComparisonInfoTab2_Costs";
-import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3_SustainabilityRep";
+import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3_Comparison";
 import ComparisonInfoTab4 from "components/calculation/ComparisonInfoTab4_FinanceBenefits";
 import Button from "@mui/material/Button";
 import tw from "twin.macro";

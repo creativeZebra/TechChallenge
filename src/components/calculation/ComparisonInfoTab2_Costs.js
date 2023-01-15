@@ -29,7 +29,6 @@ function ComparisonInfoTab2() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -53,6 +52,9 @@ function ComparisonInfoTab2() {
                 dataLabels: {
                     enabled: true
                 }
+            },
+            series: {
+                color: '#00796B'
             }
         },
         credits: {
@@ -60,7 +62,7 @@ function ComparisonInfoTab2() {
         },
         series: [{
             name: 'Annual Energy Costs for Heating and Domestic Hot Water',
-            data: [10, 7, 5]
+            data: [10, 5],
         }]
     });
 
@@ -98,33 +100,49 @@ function ComparisonInfoTab2() {
         series: [{
             name: 'Wall',
             data: [100000, 0],
+            color: '#1E88E5',
+            dataSorting: {
+                enabled: true,
+            },
         }, {
             name: 'Floor',
             data: [20000, 0],
+            color: '#9575CD',
+            dataSorting: {
+                enabled: true,
+            },
         }, {
             name: 'Window',
             data: [50000, 0],
+            color: '#00796B'
         }, {
             name: 'Roof',
             data: [5000, 0],
+            color: '#FDD835'
         }, {
             name: 'Heating',
             data: [35000, 0],
+            color: '#FF7043'
         }, {
             name: 'Hot Water',
             data: [20000, 0],
+            color: '#90CAF9'
         }, {
             name: 'Ventilation',
             data: [5000, 0],
+            color: '#512DA8'
         }, {
             name: 'Electricity Generation',
             data: [80000, 0],
+            color: '#4CAF50'
         }, {
             name: 'Demolition Costs',
             data: [0, 20000],
+            color: '#FF7043'
         }, {
             name: 'Initial Building Costs',
             data: [0, 450000],
+            color: '#546E7A'
         }]
     });
 

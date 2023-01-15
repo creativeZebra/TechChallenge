@@ -58,8 +58,8 @@ function ComparisonInfoTab3() {
                 label: {
                     connectorAllowed: false
                 },
-                pointStart: 0
-            }
+                pointStart: 0,
+            },
         },
         tooltip: {
             pointFormat: '{series.name}<br/>Cumulated kWh in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> kWh',
@@ -105,7 +105,8 @@ function ComparisonInfoTab3() {
                 542000,
                 551500,
                 561000,
-            ]
+            ],
+            color: '#43A047'
         }, {
             name: 'New Building',
             data: [410000,
@@ -147,7 +148,8 @@ function ComparisonInfoTab3() {
                 489200,
                 491400,
                 493600,
-            ]
+            ],
+            color: '#00695C'
         }],
         responsive: {
             rules: [{
@@ -255,7 +257,8 @@ function ComparisonInfoTab3() {
                 657000,
                 666500,
                 676000,
-            ]
+            ],
+            color: '#43A047'
         }, {
             name: 'New Building',
             data: [450000,
@@ -297,7 +300,8 @@ function ComparisonInfoTab3() {
                 529200,
                 531400,
                 533600,
-            ]
+            ],
+            color: '#00695C'
         }],
         responsive: {
             rules: [{

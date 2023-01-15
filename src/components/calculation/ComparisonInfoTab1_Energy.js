@@ -23,7 +23,6 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -47,6 +46,9 @@ function ComparisonInfoTab1() {
                 dataLabels: {
                     enabled: true
                 }
+            },
+            series: {
+                color: '#00796B'
             }
         },
         credits: {
@@ -54,7 +56,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: '(Net / Gross) Energy Need For heating',
-            data: [83, 70, 45]
+            data: [83, 45]
         }]
     });
 
@@ -71,8 +73,7 @@ function ComparisonInfoTab1() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard',
-                'Nearly zero-energy building'
+                'Improved Standard'
             ],
             title: {
                 text: null
@@ -101,22 +102,28 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: 'Fossil Fuels',
-            data: [61, 57, 42]
+            data: [61, 57],
+            color: '#78909C'
         }, {
             name: 'Biomass',
-            data: [84, 41, 27]
+            data: [84, 41],
+            color: '#4C7542'
         }, {
             name: 'Electricity',
-            data: [46, 36, 25]
+            data: [46, 36],
+            color: '#C0CA33'
         }, {
             name: 'District Heating',
-            data: [16, 10, 5]
+            data: [16, 10],
+            color: '#FF9800'
         }, {
             name: 'Other',
-            data: [9, 7, 2]
+            data: [9, 7],
+            color: '#FF8A65'
         }, {
             name: 'Produced Electricity',
-            data: [0, 0, 10]
+            data: [0, 10],
+            color: '#FFEB3B'
         }]
     });
 
@@ -134,7 +141,6 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -158,6 +164,9 @@ function ComparisonInfoTab1() {
                 dataLabels: {
                     enabled: true
                 }
+            },
+            series: {
+                color: '#009688'
             }
         },
         credits: {
@@ -165,7 +174,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: 'Total Primary Energy Demand For Heating And Domestic Hot Water',
-            data: [121, 84, 58]
+            data: [84, 58]
         }]
     });
 
@@ -183,7 +192,6 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -207,6 +215,9 @@ function ComparisonInfoTab1() {
                 dataLabels: {
                     enabled: true
                 }
+            },
+            series: {
+                color: '#004D40'
             }
         },
         credits: {
@@ -214,7 +225,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: 'Carbon Dioxide Emissions For Heating And Hot Water',
-            data: [32, 22, 15]
+            data: [32, 15]
         }]
     });
 
