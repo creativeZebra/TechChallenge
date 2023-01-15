@@ -8,6 +8,7 @@ import ComparisonInfoTab1 from "components/calculation/ComparisonInfoTab1_Energy
 import ComparisonInfoTab2 from "components/calculation/ComparisonInfoTab2_Costs";
 import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3_SustainabilityRep";
 import ComparisonInfoTab4 from "components/calculation/ComparisonInfoTab4_FinanceBenefits";
+import ComparisonInfoTab5 from "components/calculation/ComparisonInfoTab5_Overview";
 import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -70,15 +71,15 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                   indicatorColor="#276749"
                   centered
                 >
-                  <Tab label="Overview" value="5" sx={{ textTransform: "none" }} />
+                  <Tab label="Overview" value="1" sx={{ textTransform: "none" }} />
                   <Tab label="Total Comparison" value="3" sx={{ textTransform: "none" }} />
-                  <Tab label="Energy Consumption" value="1" sx={{ textTransform: "none" }} />
+                  <Tab label="Energy Consumption" value="5" sx={{ textTransform: "none" }} />
                   <Tab label="Costs" value="2" sx={{ textTransform: "none" }} />
                   <Tab label="Finance Benefits" value="4" sx={{ textTransform: "none" }} />
                 </TabList>
               </Box>
               <TabPanel value="1">
-                <ComparisonInfoTab1 />
+              <ComparisonInfoTab5 />
               </TabPanel>
               <TabPanel value="2">
                 <ComparisonInfoTab2 />
@@ -88,6 +89,9 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
               </TabPanel>
               <TabPanel value="4">
                 <ComparisonInfoTab4 />
+              </TabPanel>
+              <TabPanel value="5">
+               <ComparisonInfoTab1 />
               </TabPanel>
             </TabContext>
           </Box>
