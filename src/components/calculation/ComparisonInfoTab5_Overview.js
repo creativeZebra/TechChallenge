@@ -104,7 +104,7 @@ function ComparisonInfoTab5() {
                    <Box width="100%" textAlign="flex-start" sx={{ ml: 20, mt: 2 }}>
               <Typography variant="subtitle1">You can save...</Typography>
               <Typography variant="subtitle1" >
-                    <strong >... 155.000€</strong>
+                    <strong >... 580.680€</strong>
                     &nbsp;
                     when refurbishing instead of a new construction.
                   </Typography>

@@ -165,13 +165,13 @@ function ComparisonInfoTab2() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong>10,3 €/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                       energy costs by improving your building
                                     </Typography>
                                 </Box>
                             </Card>
@@ -190,13 +190,13 @@ function ComparisonInfoTab2() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong> 580.680€</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                        one-time investment costs by refurbishing your building
                                     </Typography>
                                 </Box>
                             </Card>
