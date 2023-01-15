@@ -236,13 +236,13 @@ function ComparisonInfoTab1() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong>68,7 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                        (net/gross) energy need for heating with an improved standard
                                     </Typography>
                                 </Box>
                             </Card>
@@ -262,13 +262,13 @@ function ComparisonInfoTab1() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong>162,5 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                    fossil fuels by replacing the energy carriers and adding a photovoltaic system
                                     </Typography>
                                 </Box>
                             </Card>
@@ -288,13 +288,13 @@ function ComparisonInfoTab1() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong>138,2 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                        total primary energy demand with an improved standard
                                     </Typography>
                                 </Box>
                             </Card>
@@ -315,13 +315,13 @@ function ComparisonInfoTab1() {
                             }}>
                                 <Box m={6}>
                                     <Typography variant="subtitle1">
-                                        {"After"}
+                                        {"You could save"}
                                     </Typography>
                                     <Typography variant="h6">
-                                        <strong>28.5  years</strong>
+                                        <strong>36,7 kg/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
+                                        carbon dioxide emissions with an improved standard
                                     </Typography>
                                 </Box>
                             </Card>
