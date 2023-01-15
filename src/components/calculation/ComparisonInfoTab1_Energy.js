@@ -22,7 +22,7 @@ function ComparisonInfoTab1() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard',
+                'KfW 70 House',
             ],
             title: {
                 text: null
@@ -73,7 +73,7 @@ function ComparisonInfoTab1() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard'
+                'KfW 70 House'
             ],
             title: {
                 text: null
@@ -124,7 +124,7 @@ function ComparisonInfoTab1() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard',
+                'KfW 70 House',
             ],
             title: {
                 text: null
@@ -175,7 +175,7 @@ function ComparisonInfoTab1() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard',
+                'KfW 70 House',
             ],
             title: {
                 text: null
@@ -242,7 +242,7 @@ function ComparisonInfoTab1() {
                                         <strong>68,7 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        (net/gross) energy need for heating with an improved standard
+                                        (net/gross) energy need for heating with a KfW 70 house
                                     </Typography>
                                 </Box>
                             </Card>
@@ -294,7 +294,7 @@ function ComparisonInfoTab1() {
                                         <strong>138,2 kWh/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        total primary energy demand with an improved standard
+                                        total primary energy demand with a KfW 70 house
                                     </Typography>
                                 </Box>
                             </Card>
@@ -321,7 +321,7 @@ function ComparisonInfoTab1() {
                                         <strong>36,7 kg/(m²a)</strong>
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                        carbon dioxide emissions with an improved standard
+                                        carbon dioxide emissions with a KfW 70 house
                                     </Typography>
                                 </Box>
                             </Card>

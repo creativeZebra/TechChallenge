@@ -28,7 +28,7 @@ function ComparisonInfoTab2() {
         xAxis: {
             categories: [
                 'Your House',
-                'Improved Standard',
+                'KfW 70 House',
             ],
             title: {
                 text: null
@@ -74,7 +74,7 @@ function ComparisonInfoTab2() {
             }
         },
         title: {
-            text: 'One-time costs'
+            text: 'One-time costs to upgrade to a KfW 70 house'
         },
         xAxis: {
             categories: ['Renovated Building', 'New Building']

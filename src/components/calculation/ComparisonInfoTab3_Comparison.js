@@ -65,7 +65,7 @@ function ComparisonInfoTab3() {
       pointFormat: '{series.name}<br/>Cumulated kWh in Year <b>{point.x:,.0f}: {point.y:,.0f}</b> kWh',
     },
     series: [{
-      name: 'Your Building',
+      name: 'Renovated Building',
       data: [36668,
         130763,
         224858,
@@ -108,7 +108,7 @@ function ComparisonInfoTab3() {
       ],
       color: '#43A047'
     }, {
-      name: 'New / Renovated Building',
+      name: 'New Building',
       data: [770018,
         799352,
         828686,
