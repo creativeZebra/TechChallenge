@@ -86,24 +86,6 @@ function BuildingInfoTab2() {
     },
   ];
 
-  const doorMaterials1 = [
-    {
-      value: "1",
-      label: "Wood",
-    },
-    {
-      value: "2",
-      label: "Double Glazing",
-    },
-    {
-      value: "3",
-      label: "Plastic Frame",
-    },
-    {
-      value: "4",
-      label: "Triple Glazing",
-    },
-  ];
   const windowMaterials = [
     {
       value: "1",
@@ -319,12 +301,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={wallMaterials}
-                  value={2}
+                  value={4}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"17,5"}
+                  value={"24"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -347,12 +329,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={wallMaterials2}
-                  value={2}
+                  value={1}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"13,0"}
+                  value={"2"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -375,12 +357,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={wallMaterials3}
-                  value={5}
+                  value={4}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"1,0"}
+                  value={"1,5"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -410,16 +392,16 @@ function BuildingInfoTab2() {
                     textAlign="center"
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
-                      <Typography sx={{ ml: -0.9 }} variant="body2">
-                        Total Area: 3.181,57 m²
+                      <Typography sx={{ ml: -3.7 }} variant="body2">
+                        Total Area: 952,93 m²
                       </Typography>
                       <Typography variant="body2">
-                        Total Thickness: 23,2 cm
+                        Total Thickness: 29,71 cm
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 2 }}>
                       <Typography variant="body2">
-                        U-Value: 0,24 W/(m²*K)
+                        U-Value: 1,08 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
@@ -462,7 +444,7 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={windowMaterials}
-                  value={3}
+                  value={1}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={4}>
@@ -485,7 +467,7 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={windowMaterials}
-                  value={4}
+                  value={1}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={4}>
@@ -517,12 +499,12 @@ function BuildingInfoTab2() {
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
                       <Typography variant="body2">
-                        Total Area: 1.060,57 m²
+                        Total Area: 317,66 m²
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
                       <Typography variant="body2">
-                        U-Value: 1,20 W/(m²*K)
+                        U-Value: 3,0 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
@@ -565,12 +547,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={roofMaterials}
-                  value={2}
+                  value={1}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"20,0"}
+                  value={"20"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -598,7 +580,7 @@ function BuildingInfoTab2() {
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"28,0"}
+                  value={"7"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -621,12 +603,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={roofMaterials3}
-                  value={2}
+                  value={3}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"1,0"}
+                  value={"1"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -656,16 +638,16 @@ function BuildingInfoTab2() {
                     textAlign="center"
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
-                      <Typography sx={{ ml: -2 }} variant="body2">
-                        Total Area: 3.848,31 m²
+                      <Typography sx={{ ml: -3.7 }} variant="body2">
+                        Total Area: 825,55 m²
                       </Typography>
                       <Typography variant="body2">
-                        Total Thickness: 64,21 cm
+                        Total Thickness: 34,01 cm
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 2 }}>
                       <Typography variant="body2">
-                        U-Value: 0,13 W/(m²*K)
+                        U-Value: 0,49 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
@@ -708,12 +690,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={floorMaterials}
-                  value={2}
+                  value={3}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"22,0"}
+                  value={"20"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -736,12 +718,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={floorMaterials2}
-                  value={2}
+                  value={1}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"5,0"}
+                  value={"3"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -764,12 +746,12 @@ function BuildingInfoTab2() {
                   heading={"Material"}
                   label={"Material"}
                   data={floorMaterials3}
-                  value={4}
+                  value={6}
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={6}>
                 <StandardNumericField2
-                  value={"1,0"}
+                  value={"3"}
                   label={"Thickness"}
                   InputAdornmentType="CentiMeter"
                   DecimalScaleType="Percentage"
@@ -799,16 +781,16 @@ function BuildingInfoTab2() {
                     textAlign="center"
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
-                      <Typography sx={{ ml: -0.9 }} variant="body2">
-                        Total Area: 15.393,23 m²
+                      <Typography sx={{ ml: -2.8 }} variant="body2">
+                        Total Area: 2476,11 m²
                       </Typography>
                       <Typography variant="body2">
-                        Total Thickness: 31,03 cm
+                        Total Thickness: 29,71 cm
                       </Typography>
                     </Grid>
                     <Grid item xs={6} sx={{ mt: 2 }}>
                       <Typography variant="body2">
-                        U-Value: 0,148 W/(m²*K)
+                        U-Value: 0,81 W/(m²*K)
                       </Typography>
                     </Grid>
                   </Grid>
