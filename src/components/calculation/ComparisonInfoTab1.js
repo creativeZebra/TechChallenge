@@ -23,7 +23,7 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -72,7 +72,7 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -134,7 +134,7 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -183,7 +183,7 @@ function ComparisonInfoTab1() {
             categories: [
                 'Your House',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null

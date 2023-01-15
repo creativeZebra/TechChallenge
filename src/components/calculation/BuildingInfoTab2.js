@@ -10,6 +10,8 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
 
 function BuildingInfoTab2() {
   const wallMaterials = [
@@ -409,7 +411,7 @@ function BuildingInfoTab2() {
                   >
                     <Grid item xs={6} sx={{ mt: 0.6 }}>
                       <Typography sx={{ ml: -0.9 }} variant="body2">
-                        Total Area: 3.181,57 m²  
+                        Total Area: 3.181,57 m²
                       </Typography>
                       <Typography variant="body2">
                         Total Thickness: 23,2 cm
@@ -464,7 +466,7 @@ function BuildingInfoTab2() {
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={4}>
-                
+
               </Grid>
             </Grid>
             <Box width="100%" textAlign="start" sx={{ mb: 2, ml: 3, mt: 2 }}>
@@ -487,10 +489,10 @@ function BuildingInfoTab2() {
                 ></StandardDropdown2>
               </Grid>
               <Grid item xs={4}>
-                
+
               </Grid>
             </Grid>
-            
+
             <Grid
               container
               direction="row"
@@ -815,6 +817,23 @@ function BuildingInfoTab2() {
             </Grid>
           </Box>
         </Card>
+        <Box width="100%" textAlign="center" mt={2} mb={1}>
+          <Fab
+            size="small"
+            sx={{
+              backgroundColor: '#2E7D32',
+              color: '#ffffff',
+              '&:hover': {
+                backgroundColor: '#276749',
+                color: '#ffffff',
+              }
+            }}
+          >
+            <AddIcon />
+          </Fab>
+
+        </Box>
+
       </Grid>
     </Grid>
   );

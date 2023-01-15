@@ -29,7 +29,7 @@ function ComparisonInfoTab2() {
             categories: [
                 'National Minimum Requirement',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null
