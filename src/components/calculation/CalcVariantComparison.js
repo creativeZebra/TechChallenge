@@ -4,10 +4,10 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import ComparisonInfoTab1 from "components/calculation/ComparisonInfoTab1";
-import ComparisonInfoTab2 from "components/calculation/ComparisonInfoTab2";
-import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3";
-import ComparisonInfoTab4 from "components/calculation/ComparisonInfoTab4";
+import ComparisonInfoTab1 from "components/calculation/ComparisonInfoTab1_Energy";
+import ComparisonInfoTab2 from "components/calculation/ComparisonInfoTab2_Costs";
+import ComparisonInfoTab3 from "components/calculation/ComparisonInfoTab3_SustainabilityRep";
+import ComparisonInfoTab4 from "components/calculation/ComparisonInfoTab4_FinanceBenefits";
 import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
@@ -45,7 +45,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                       color: '#ffffff',
                     }
                   }}
-                startIcon={<CloudDownloadOutlinedIcon />}>
+                  startIcon={<CloudDownloadOutlinedIcon />}>
                   <Typography sx={{ textTransform: "none" }}>Export Report</Typography>
                 </Button>
               </Stack>
@@ -56,7 +56,7 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
           <Box width="100%" textAlign="center">
-            <Typography variant="h4">Variant Comparison</Typography>
+            <Typography variant="h4">Your Individual Report</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ mt: 2 }}>
@@ -70,9 +70,10 @@ function CalcVariantComparison({ hideGraphs, setHideGraphs }) {
                   indicatorColor="#276749"
                   centered
                 >
+                  <Tab label="Overview" value="5" sx={{ textTransform: "none" }} />
+                  <Tab label="Total Comparison" value="3" sx={{ textTransform: "none" }} />
                   <Tab label="Energy Consumption" value="1" sx={{ textTransform: "none" }} />
                   <Tab label="Costs" value="2" sx={{ textTransform: "none" }} />
-                  <Tab label="Total Comparison" value="3" sx={{ textTransform: "none" }} />
                   <Tab label="Finance Benefits" value="4" sx={{ textTransform: "none" }} />
                 </TabList>
               </Box>

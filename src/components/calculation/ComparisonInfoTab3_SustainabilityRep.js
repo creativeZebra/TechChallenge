@@ -22,7 +22,7 @@ function ComparisonInfoTab3() {
             }
         },
         title: {
-            text: 'Sustainability Rating'
+            text: 'Sustainability Comparison'
         },
 
         credits: {
@@ -326,31 +326,7 @@ function ComparisonInfoTab3() {
                     alignItems="center"
                     spacing={4}
                 >
-                    <Grid item xs={12} md={12} lg={8}>
-                        <HighchartsReact highcharts={Highcharts} options={chartOptions1} />
-                        <Box m={2}>
-                            <Divider />
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={12} lg={4}>
-                        <Box width="100%" textAlign="center">
-                            <Card sx={{
-                                backgroundColor: "#F5F5F5",
-                            }}>
-                                <Box m={6}>
-                                    <Typography variant="subtitle1">
-                                        {"After"}
-                                    </Typography>
-                                    <Typography variant="h6">
-                                        <strong>28.5  years</strong>
-                                    </Typography>
-                                    <Typography variant="subtitle1">
-                                        a new construction will be more sustainable than a renovation
-                                    </Typography>
-                                </Box>
-                            </Card>
-                        </Box>
-                    </Grid>
+                    
                     <Grid item xs={12} md={12} lg={8}>
                         <HighchartsReact highcharts={Highcharts} options={chartOptions2} />
                         <Box m={2}>
@@ -371,6 +347,31 @@ function ComparisonInfoTab3() {
                                     </Typography>
                                     <Typography variant="subtitle1">
                                         a new construction will be cheaper than a renovation
+                                    </Typography>
+                                </Box>
+                            </Card>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={8}>
+                        <HighchartsReact highcharts={Highcharts} options={chartOptions1} />
+                        <Box m={2}>
+                            <Divider />
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={12} lg={4}>
+                        <Box width="100%" textAlign="center">
+                            <Card sx={{
+                                backgroundColor: "#F5F5F5",
+                            }}>
+                                <Box m={6}>
+                                    <Typography variant="subtitle1">
+                                        {"After"}
+                                    </Typography>
+                                    <Typography variant="h6">
+                                        <strong>28.5  years</strong>
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        a new construction will be more sustainable than a renovation
                                     </Typography>
                                 </Box>
                             </Card>

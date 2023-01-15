@@ -17,7 +17,7 @@ function ComparisonInfoTab2() {
 
     const [chartOptions1, setChartOptions1] = useState({
         chart: {
-            type: 'bar',
+            type: 'column',
             style: {
                 fontFamily: "'Roboto', sans-serif",
             }
@@ -27,9 +27,9 @@ function ComparisonInfoTab2() {
         },
         xAxis: {
             categories: [
-                'National Minimum Requirement',
+                'Your House',
                 'Improved Standard',
-                'Ambitious Standard / NZEB'
+                'Nearly zero-energy building'
             ],
             title: {
                 text: null
@@ -119,6 +119,9 @@ function ComparisonInfoTab2() {
         }, {
             name: 'Electricity Generation',
             data: [80000, 0],
+        }, {
+            name: 'Demolition Costs',
+            data: [0, 20000],
         }, {
             name: 'Initial Building Costs',
             data: [0, 450000],
