@@ -56,7 +56,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: '(Net / Gross) Energy Need For heating',
-            data: [83, 45]
+            data: [116.6, 47.9]
         }]
     });
 
@@ -101,30 +101,14 @@ function ComparisonInfoTab1() {
             enabled: false
         },
         series: [{
-            name: 'Fossil Fuels',
-            data: [61, 57],
-            color: '#78909C'
-        }, {
-            name: 'Biomass',
-            data: [84, 41],
-            color: '#4C7542'
-        }, {
             name: 'Electricity',
-            data: [46, 36],
+            data: [2.4, 7.4],
             color: '#C0CA33'
         }, {
-            name: 'District Heating',
-            data: [16, 10],
-            color: '#FF9800'
-        }, {
-            name: 'Other',
-            data: [9, 7],
-            color: '#FF8A65'
-        }, {
-            name: 'Produced Electricity',
-            data: [0, 10],
-            color: '#FFEB3B'
-        }]
+            name: 'Fossil Fuels',
+            data: [231.9, 62],
+            color: '#78909C'
+        },]
     });
 
     const [chartOptions3, setChartOptions3] = useState({
@@ -174,7 +158,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: 'Total Primary Energy Demand For Heating And Domestic Hot Water',
-            data: [84, 58]
+            data: [200.8, 62.6]
         }]
     });
 
@@ -225,7 +209,7 @@ function ComparisonInfoTab1() {
         },
         series: [{
             name: 'Carbon Dioxide Emissions For Heating And Hot Water',
-            data: [32, 15]
+            data: [52.9, 16.2]
         }]
     });
 
