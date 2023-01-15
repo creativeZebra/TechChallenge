@@ -98,30 +98,35 @@ function ComparisonInfoTab5() {
                 sx={{
                   backgroundColor: "#F5F5F5",
                   width: 715,
-                  height: 188,
+                  height: 210,
                 }}
               >
-                   <Box width="100%" textAlign="flex-start" sx={{ ml: 20, mt: 3 }}>
+                   <Box width="100%" textAlign="flex-start" sx={{ ml: 20, mt: 2 }}>
               <Typography variant="subtitle1">You can save...</Typography>
               <Typography variant="subtitle1" >
-                    <strong >... XY€</strong>
+                    <strong >... 155.000€</strong>
                     &nbsp;
                     when refurbishing instead of a new construction.
                   </Typography>
                   <Typography variant="subtitle1">
-                    <strong>... XY€</strong>
+                    <strong>... 32%</strong>
                     &nbsp;
-                    in financing if your house will become a KfW 40 building.
+                    primary energy demand when refurbishing your building.
                   </Typography>
                   <Typography variant="subtitle1">
-                    <strong>... XY kwh</strong>
+                    <strong>... 51%</strong>
                     &nbsp;
-                    energy usage per year.
+                    transmission heat loss when refurbishing your building.
                   </Typography>
                   <Typography variant="subtitle1">
-                    <strong>... XY kg</strong>
+                    <strong>... 15%</strong>
                     &nbsp;
-                    CO2 when refurbishing.
+                    repayment subsidy with a 150.000€ loan for your building.
+                  </Typography>
+                  <Typography variant="subtitle1">
+                    <strong>... 60.000 kWh</strong>
+                    &nbsp;
+                    per year when refurbishing your building.
                   </Typography>
                   </Box>
                   </Card>
